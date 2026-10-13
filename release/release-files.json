@@ -1,0 +1,116 @@
+[
+  {
+    "path": "parquet/client_pull_requests.parquet",
+    "size": 141264150,
+    "blob_id": "f92d190d2f963f46a1e1c7b81e202671f846abd6",
+    "lfs_sha256": "f65398c9d030869ffcc219eb162085da81cabfed40cb6b0b884833e9d17736fc"
+  },
+  {
+    "path": "parquet/commits.parquet",
+    "size": 1794626553,
+    "blob_id": "821b329e0cbd0ff17dbf57ab8f708f7bb6c590d9",
+    "lfs_sha256": "219577cee10fc1ba1332c218391cff5b27667eab2b047a533dd1812dd43e8449"
+  },
+  {
+    "path": "parquet/consumer_repos.parquet",
+    "size": 1256594,
+    "blob_id": "7df5e35d7c68df7a7a94e6071bd4d78611bbc164",
+    "lfs_sha256": "08d2e878fb118be5560ca60c6dbc135e6e3f94d1a26a130c03f972bafe0e626b"
+  },
+  {
+    "path": "parquet/ecosystem_issues.parquet",
+    "size": 849458719,
+    "blob_id": "cc5c284c49761ede53563606296b5c7c54e5f6ae",
+    "lfs_sha256": "5eb39b22e9e729b18cbff3574e166b5212ccf4be0bddde8200a108e2752dd1ec"
+  },
+  {
+    "path": "parquet/issue_comments.parquet",
+    "size": 599359083,
+    "blob_id": "93e45a9e38795399b2badaaa147caa6e03d60055",
+    "lfs_sha256": "be5e684b73f0ffa1dbd769aa4c36645922bc65d7546684b4b839d7f2ca51daac"
+  },
+  {
+    "path": "parquet/mcp_prompts.parquet",
+    "size": 1107621,
+    "blob_id": "3fdcf99218a513bf2397cc6ac927e04dd0c014f2",
+    "lfs_sha256": "bbbcfd763377a86dbdb838fee7c13c220e66693ada652445568b9cb77387a3fe"
+  },
+  {
+    "path": "parquet/mcp_registries.parquet",
+    "size": 2862,
+    "blob_id": "5053cb40e98bf18cfca74b8c87dcd4f51a927d9e",
+    "lfs_sha256": "141d69572066a71fd529a1eb1b3cf614b4ae30b66a15282fe0c78676fe105980"
+  },
+  {
+    "path": "parquet/mcp_resources.parquet",
+    "size": 1634887,
+    "blob_id": "2261c03bf29b9eeefc8dbcf7a98c93970dc341a9",
+    "lfs_sha256": "b277428899e19d328d5934dec0c32edb758804f8a6c2041f88c871d39a371936"
+  },
+  {
+    "path": "parquet/mcp_server_transports.parquet",
+    "size": 2210260,
+    "blob_id": "71265a8af0d30bfb2a6eb6f55e7d7e040323b221",
+    "lfs_sha256": "baeaf17c5b4f46a0351c7932d498ab6f0c82e8100590dacf3150980b1368bed6"
+  },
+  {
+    "path": "parquet/mcp_servers.parquet",
+    "size": 6330431,
+    "blob_id": "7c867410935f90bf214b30d1c60bfa947ad3b001",
+    "lfs_sha256": "83085bc7511cf4bfcb2fd4ad90679884da8f8a6ece9a14ce42a52e5215e962f8"
+  },
+  {
+    "path": "parquet/mcp_tools.parquet",
+    "size": 72674276,
+    "blob_id": "3217773b3c57d9912ecfea4604f121d6a8e480fd",
+    "lfs_sha256": "ad9adf2a2cd986c6c35aa50b5840392ba3ea005f570f0f98e05c65938c392b16"
+  },
+  {
+    "path": "parquet/pr_commit_bridge.parquet",
+    "size": 24289435,
+    "blob_id": "44c35543a9539604f590905bf33f49c2fe21f3d7",
+    "lfs_sha256": "b25851b678c443517feb7bbee5df5e09b66454b55c9b0d3dbbba2b53edd0db8d"
+  },
+  {
+    "path": "parquet/pr_review_comments.parquet",
+    "size": 309695836,
+    "blob_id": "93c47ddb2836b3c633cb40f7c7d1b342280640e9",
+    "lfs_sha256": "af341e03bd1bcc942999bbc398a36cdae2c59f70ba411c235d35c70a9056a320"
+  },
+  {
+    "path": "parquet/pr_reviews.parquet",
+    "size": 173947234,
+    "blob_id": "539ce56df809f6d0064554a7a813928413708fd3",
+    "lfs_sha256": "8d24808c7045a972e4bb66965b6ba80435f9ae9d88b0fa38e3d09718c4ca5dbe"
+  },
+  {
+    "path": "parquet/repo_discovery_signals.parquet",
+    "size": 1057888,
+    "blob_id": "6aa8f7930c0edf1667c30d5b0d6c2cd5675572a3",
+    "lfs_sha256": "cd93413c93306089dce7f17d913cf39fcd4cffeb8d47d1962620937550cc8858"
+  },
+  {
+    "path": "parquet/repo_server_usage.parquet",
+    "size": 453232,
+    "blob_id": "699c9850dbcf9958db91c187d7d2f26fd75f72de",
+    "lfs_sha256": "cf4cb0cc10510dcab01e02a6f256c70908d91bda859a303ee52aa8bd02bdb527"
+  },
+  {
+    "path": "parquet/server_dependencies.parquet",
+    "size": 15418987,
+    "blob_id": "c2d69401a82f6de235e8beb82bf14b8f0c7277f6",
+    "lfs_sha256": "dfb60e75581876a8a159651567b2b09c2ff9f7b7fac7c7a84e7f5dc9dac5a027"
+  },
+  {
+    "path": "parquet/server_pull_requests.parquet",
+    "size": 1299162571,
+    "blob_id": "77aae553db0966eb812472d28be45df96b2f57fb",
+    "lfs_sha256": "9d0dcb54fa64d70ac8fb3e885a299a8f36828c9c1c26159e5eeb17d1ff6a087e"
+  },
+  {
+    "path": "parquet/server_registry_listings.parquet",
+    "size": 15379276,
+    "blob_id": "347417d11caed62233b4bdddc62222dc73747568",
+    "lfs_sha256": "1113787ee0d658a058ee2a01030323e2407cbbb257a9edac94313b991007f97e"
+  }
+]

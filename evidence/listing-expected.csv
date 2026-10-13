@@ -1,0 +1,985 @@
+server_id,server_name,configured_repositories
+07c6bf03-21fe-573b-8584-ea198f1812dc,python-sdk,469
+7b5d3922-ed37-56ac-86c3-c49b07e0a685,run,403
+1ccb2319-3829-56b9-94d8-c888d656f910,Playwright MCP Server,362
+fe037b36-d5a9-5f98-b98e-dd2a4ee65643,Context7 MCP,337
+0086aae1-205e-5a54-bbe6-e5db0671c2e8,Chrome DevTools MCP,174
+43fba714-8430-59fd-81eb-885730bf9990,GitHub,162
+0ae5e4c0-1cac-5a41-a08e-7e48c88086be,Sequential Thinking,145
+4601ab9f-5c75-56a0-bbd8-cdc562fe3640,Filesystem,139
+ebbc59a3-2089-5d52-aee3-e1b225ab76cc,PostgREST,137
+66c90873-9c45-544a-a561-c5db9e7aaff0,mcp-remote,121
+06da6dd1-45e6-55be-8f14-3c4cc5bc79c9,Serena,93
+6539247e-7585-5bcc-986a-7c12db57edc6,Next.js DevTools MCP,87
+dd91cad4-b2b5-5f55-a3c5-91bf62100d66,Knowledge Graph Memory,82
+fa573d1e-94fc-5463-92d5-15a82139045a,Taskmaster,69
+2cf08990-8944-57a3-93d8-cff671b61ec2,Herd,58
+9e2f1485-8096-5630-8a61-15276f64a6df,Nx MCP Server,53
+72634b68-c128-563c-84ce-3a0587a299a2,Honk,50
+df2aa29b-e6dc-565f-8237-2aa2a31b6bf0,PostgreSQL,50
+a7167e39-cec7-5eb7-9644-665e0871264a,Fetch,40
+07635652-7a2c-5e91-8e4d-d10cdcf27c2b,SparkMango,36
+06f6e1b8-1322-5b40-a73d-a8c899151fb9,Figma MCP Server,32
+844bde86-51fd-5e7d-abf3-a3fd481b4571,Puppeteer,32
+577a5b04-1203-5b1e-85bb-a59d3dd2f44d,DeepWiki,31
+f2b38bf8-e369-55c6-a3fd-bb9d40ac4826,Brave Search,28
+4127b8de-72ce-5cc8-8f3e-8f0367e64cd2,code-review-graph,26
+b3d14e8f-36aa-524a-ae15-ec8a7fd834b5,@browsermcp/mcp,26
+0c80ab9c-0031-5a65-b7f5-fcdb5de2232e,mcp-playwright,25
+324f57a4-f3a0-57b3-b2b8-7b0fad359fc2,com.vercel/vercel-mcp,22
+5d9430e0-307a-5df0-821f-32c74553874b,Git,22
+ba5ecab2-e7eb-5ccc-aa81-1893a294c8a9,app.linear/linear,22
+ea08b541-1549-5a8c-a1fb-c88e3c90f161,mcp-server-firecrawl,22
+3e362e2e-4d84-54d9-be34-b5b25546c170,@pipeworx/mcp-figma,21
+1bf4a5bc-fc00-57c9-aca2-f532ac360748,Microsoft Learn Docs MCP Server,19
+70da9fc6-a087-5c25-9690-e12fa818f159,Figma MCP Server,19
+f2a05117-0464-50f4-9736-b5f04a79af35,com.notion/mcp,18
+06abd757-ea57-5a1e-9836-5a9d4aad22af,Notion MCP Server,17
+3e587dbf-e04f-54e3-8cf0-6115958717b1,Svelte,16
+4a1e43e3-22e6-579d-8828-d8fa0014649f,Magic Component Platform (MCP),15
+7e89c578-18e1-547d-abf3-7d88f1b5889d,Slack MCP Server,15
+f2ce352d-41c0-536b-a8e9-2905e485dafe,rewrite,15
+666f80b0-acca-5abb-a90f-2cc1cecaefdc,io.github.rog0x/git,14
+a4d068f7-19cd-5953-88af-71689654880a,chakra-ui,14
+623c6eeb-aaef-58c5-9564-4ddf2aa1d8dd,com.atlassian/atlassian-mcp-server,13
+055a4be5-7d64-5343-8b2c-1707b31c7ea2,better-auth,12
+229589e3-b9ea-5bd3-b80b-f5f1fb362fb3,SQLite,12
+5cd74ba2-b704-5451-8240-a6429f194faf,@shopify/dev-mcp,12
+f4b9f520-ab2a-59b9-8a17-a91bd851c060,perplexity-ai,11
+ff821e8c-462d-52ca-9f75-9e5f1700e977,Demo (Everything),11
+1bda7c30-12f9-5e9f-b515-3c8a09826b8d,AWS Nova Canvas,10
+531750e1-c515-5320-b532-36db0af7792d,Railway MCP Server,10
+77750986-48db-50fb-9f6b-d4528ab01485,mcp-server-sqlite,10
+c9f52f84-de21-5ca3-9025-d95a3346d30f,com.googleapis.stitch/mcp,10
+d83321d1-8b4d-5d4d-bfa0-3b41fc9e5a99,tavily-mcp,10
+f8d14816-bd93-5d74-a6ba-7ffd0d587d80,PostgreSQL MCP Server,10
+1b8187e6-5633-5e9c-bd34-68ff6390f6d0,MCP Server Tauri,9
+432610f4-7669-5e44-baa5-d10f47340055,Mastra Docs,9
+6f294df7-b3f9-58c8-b273-d3f2eb23b9d2,Time,9
+8abfc159-5d82-50b8-83fc-869878f8ecd7,Mobile Next MCP Server,9
+9561c053-a3c7-549b-af03-370d1c0a315d,ArXiv MCP Server,9
+9855a567-0123-56d0-87c0-3d75b945fe76,@testsprite/testsprite-mcp,9
+a3f8b76a-311d-59a3-8e7e-befdafdcdab5,Gateway,9
+a503fe62-d295-5f58-b0ef-0de8217019bf,CodeRabbit MCP Server,9
+cc5cd5db-1a07-5be7-97ce-0d9de674717b,textlint,9
+dcfba8bd-bf33-5af3-bfae-2373c108e804,@agentdeskai/browser-tools-mcp,9
+1864e3b0-f816-5221-975c-76b426943926,Claude Desktop Commander MCP,8
+65b09280-7e1d-5bb2-9720-cf690857c957,Firebase,8
+892e27c3-78f6-53ab-b747-815054907703,Shrimp Task Manager,8
+de538c18-39eb-5067-8eaa-5fd9c247fde9,deepwiki-mcp,8
+05f51d9f-cb53-5e56-9ff7-ebd55fd3b1aa,CloudBase MCP,7
+0c000900-175d-58a9-8658-59397c207293,n8n-MCP,7
+182ef8b3-7736-58ff-a712-9f830dd72423,MarkItDown,7
+298a3ea2-3c29-5704-95b6-544f6abb6d58,claude-code,7
+3680d901-4000-5298-9167-15e44345e7d5,ElevenLabs MCP Server,7
+4bf7c8ac-6c2f-5a55-a2f2-c9a0080d8108,@jpisnice/shadcn-ui-mcp-server,7
+4fe16532-eb25-5025-aaa2-385856a1eba4,render-mcp,7
+984bf087-1cb2-5628-a537-9f87c9ecf696,mastra,7
+9b4b9a74-62bd-5c3b-b535-5d468b464d0a,XcodeBuildMCP,7
+fdc6d69d-8dff-58f9-81a6-520d014fc62d,CodeGraph,7
+55490f36-03b4-5f34-a8da-abd2ebd5ffed,claude-mem,6
+5dfe3c52-35b2-5cdc-b545-9fc4feb49629,Bright Data MCP,6
+828d402d-80af-5569-a8bd-7697880deaf8,Docker MCP Server,6
+d2095660-cb2e-53bc-a859-6ee0a01a167d,Astro Docs,6
+d5b1780a-4114-508c-85a7-2ee7027add69,Exa MCP Server,6
+060ccb08-f4b6-5e96-ad28-3fc2cc23bd44,MongoDB MCP Server,5
+117af062-6dcb-522a-a449-f2e4cddde1d3,Puppeteer MCP Server,5
+24614d08-c9e0-5a01-bf8c-80934a20e357,Pinecone Developer MCP,5
+313f26fd-ce97-510c-9b25-fe577b89a3d9,Netlify MCP Server,5
+3b201aa7-5db1-58b4-a126-421768692769,io.github.jshorwitz/synter-ads,5
+6b1887a3-e20d-5cc8-8267-483e39dcd178,@remotion/mcp,5
+74a5f446-1321-57da-93c4-10df5c8dc3cf,mcp-nixos,5
+78fc702b-2731-5ca5-9793-9a3a246ad493,Magic UI MCP Server,5
+7c08a781-4626-5379-acae-2e27c571d242,synter-mcp-server,5
+91f55c9a-e75a-5048-a235-4f48fc95ddb3,Sentry MCP,5
+af09814c-3299-5cec-be70-f74ae2e5419a,@pimzino/spec-workflow-mcp,5
+b3e5473c-8054-5797-af47-6d044585581a,apidog-mcp-server,5
+c99b56d5-4d2e-5dfa-8226-a49fec4838dc,Web Search,5
+d69092fe-6e61-529c-b20a-2b511d11c193,Cloudflare API,5
+ef9af874-8713-5085-8236-a21b3aee9576,Replicate,5
+03cc4737-c1c7-59b1-9380-4ccc2a2a8598,Lean LSP MCP,4
+06e4bb84-d1cf-5c62-b9a5-7de4f232aae4,fastmcp,4
+13547e6e-c206-57ee-9e4a-e59d6f405973,MCP Svelte Docs Server,4
+1f76da40-bdd8-539b-a417-5d92182ca408,docker-mcp,4
+272745ff-bffd-57dd-8059-831493823e62,jetbrains,4
+2c4d8def-3374-5876-87e9-73d83580f5f8,MCP Server for MySQL,4
+326fee9b-ea1f-589d-8d8b-082145c0de22,Motion,4
+38650821-02d0-5732-a234-aec96ba74851,Perplexity API Platform (moved to ai.perplexity/mcp-server),4
+432d0e64-b211-5eac-95fe-f91863df795b,Hubspot,4
+4a2047a5-fdbb-5c50-bbe7-2e395e2b58e3,Brave Search,4
+50997d11-7cbd-51ef-a0a6-d54bb8376230,@negokaz/excel-mcp-server,4
+69612f66-80a7-50ba-9adf-ad9bba04ed9c,@mui/mcp,4
+7343c44d-e6a4-51e5-baec-b40f981f7bc5,io.github.ruvnet/ruv-swarm,4
+767c09a1-9384-5b23-b9b6-fe5622b504e9,perplexity-ask,4
+8341d389-c17c-5877-a901-db07a69f854b,Lucide Icons MCP,4
+86ca04bf-eb85-5cd9-8bed-68cf4bd132df,NodeJS API Docs MCP Server,4
+8a09c761-3698-5250-a1ab-87893e77d545,stripe,4
+97ba4b62-f756-589e-b308-833eea231a3d,Deepwiki MCP Server,4
+994f86a2-b846-57f4-827f-1bd7d7ded24b,datadog-mcp-server,4
+a2bfb893-0b52-5b30-ad1f-464cbd6da10d,Ghidra,4
+b2719e2c-aa15-5db8-be21-19547449bc02,com.pulsemcp/vercel,4
+beca752e-c437-5b4b-a4d2-39407157ebcd,iflow-mcp_khengyun-notebooklm-mcp,4
+d25a2ab2-a36e-5a2c-a2d8-50ee5c7f048c,cclsp,4
+e25b4787-2340-5700-8040-342b58261a0b,@pipeworx/mcp-tavily,4
+f0092cef-bec8-524f-b154-f5cac65cfba7,atlassian,4
+fd4d89b3-6ce2-5c49-b776-d44484091c66,Hugging Face,4
+013cf308-a18b-5a4e-b59b-e3df62313c18,gemini-api-docs-mcp,3
+06d7c3c5-7453-5679-bef2-efe5067effe6,Task Manager,3
+0892e5bc-ae45-53d4-8713-72989f1ede6d,awslabs.terraform-mcp-server,3
+128bdab5-4af1-5d89-8e3c-872c1cbcfd9b,Salesforce DX MCP Server,3
+13596ea2-bbf4-5f6d-8d7b-d329c64e450c,mcp-knowledge-graph,3
+1cade88a-f027-5898-8c35-09b5c3a9c823,com.stripe/mcp,3
+1ce024d4-1144-5d70-9e64-7a82fb33649c,MCP server for Obsidian,3
+216cb667-d5ae-5400-99d5-63dd528e1690,Postgres MCP,3
+27948ee8-fccb-5fc9-a27a-e8ac295fa857,codex-mcp-server,3
+2aec62e8-8c34-5ba4-94cd-d87d5c30f04a,@codemcp/workflows,3
+315d0510-c6ea-5f40-a116-778525b387c7,Gemini MCP Tool,3
+31d0c564-6552-57c8-94b8-98096b23b71f,mcp-firecrawl,3
+32c6955a-c26d-51ba-ae57-81a9f639b8c0,Alpha Vantage,3
+32eed721-dc6b-5563-b936-1dc42b9dd035,expo-mcp,3
+35b3b005-1b45-5672-8f70-f9844b4dd99a,firefox-devtools-mcp,3
+35c9ce57-bd62-5124-b9e6-c08f4bcea8b0,@ura-dev/memorybank,3
+37af472b-aacb-5b42-af0e-840f471cb245,Asana,3
+39f2c60f-e706-5255-8a4e-a17f64b913a3,excalidraw-mcp-server,3
+3f85379d-6199-5de4-b5a4-918a52da8db4,Supergateway MCP Server,3
+41614a90-6a18-5e55-a615-9019a45b77fd,heroui-mcp,3
+49919a3d-63f4-5010-92d7-2ebf991892de,Unity Editor MCP Server,3
+4af8e627-d774-566d-b662-071492d68d93,MCP Documentation Service,3
+5c192085-8142-5274-92e9-03917339c8fd,A11y MCP Server,3
+621c270d-c77f-52f2-b586-fb3a40b8322b,BlenderMCP,3
+672008cd-5387-53fb-a408-de21adb9382e,PostHog MCP Server,3
+6b1fdd5f-b030-5b4e-8c99-b27ed1ecc3f6,Unity-MCP,3
+6b4fbdec-26cd-5282-85ce-0a554f7a0488,Electron MCP Server,3
+6c45e855-cfad-5617-b5fb-3660436a827a,actors-mcp-server,3
+721d574a-18c8-52fd-8314-1fdd7ab4dd66,AWS Knowledge,3
+75fe22d7-4219-514c-b876-7a1488c87e54,Repomix,3
+7a12c3f6-1f7c-599e-a766-561261a9263c,Apple Calendar,3
+7bd45f31-2d92-510d-bd13-8a896eb5e896,mcp-server-appwrite,3
+7d9be90c-80c8-516a-a193-333ef9ec4f92,Tavily MCP Server,3
+8051bfcd-69ac-55a7-a17d-277dcd2e5839,ChuckNorris MCP Server,3
+8192f706-13c6-56af-87c6-3d9193aed1b4,Canva,3
+8351c42a-c3d0-586c-a8c6-041e90bf05af,io.github.therealtimex/browser-use,3
+8a98b9fb-4cc5-5468-973c-86de547af1c7,Pixserp,3
+8c094bf7-33cf-59ce-8967-26acda54d076,Perplexity MCP Server,3
+8c4c719f-ac8e-55f4-9b74-71f789c292a7,Amplitude,3
+91e130d6-48b5-527c-b953-3f62e8797a09,Contex,3
+93183877-d045-50c8-844e-3704478fc66a,Cloudflare,3
+973ed964-4c72-52ea-80ba-25205ae1a5b4,PostgreSQL MCP Server,3
+a0b57462-9aa7-555a-a77c-e934cd76a91e,io.github.taylorwilsdon/workspace-mcp,3
+a48e3096-0962-5bc4-ae41-2cb7887ad6c4,graphify,3
+afaf9cc4-8617-5974-9d16-a84dbfb0ea8a,Jira,3
+b323bfe4-0bc3-56ba-a80a-9857065aab46,sonarqube,3
+b5ae9277-36a3-5fc7-851a-60ded2722514,net.nymbo/tools,3
+b76618e3-6523-528b-8bbb-df7b268915e2,io.github.rog0x/time,3
+c6c47531-4da9-5cec-8dac-42ff2161bb60,mcp-proxy,3
+ce140b97-b1fd-50d5-bcbc-8735026200a6,Google Drive MCP Server,3
+d6b3f7d4-2a9b-5b72-be04-3e8b064c7b63,rust-analyzer-mcp,3
+dfcb91cf-fc0d-5e18-893a-b3056574d414,clojure-mcp,3
+e3cad024-c2d3-57b5-b997-9834945711aa,Sanity,3
+e879fdb4-9980-5f11-96eb-bbe58cfffd63,computer-use-mcp,3
+09171948-9955-555c-b0f6-39be667c673b,plur,2
+0d072fa0-a4c9-512b-82e1-e1b5001af5f5,com.mcpcalc/calculator,2
+101f7b7c-0e0d-51ee-9a61-74955d0c7dcc,io.fusionauth/mcp-docs,2
+11a8ee47-e628-5f89-b688-73362f3300c6,semgrep,2
+12e58eae-d254-50c6-a99a-ee1970480ad3,copilot,2
+18709d90-6ba4-582a-a4ed-3bc69308d093,@gongrzhe/server-gmail-autoauth-mcp,2
+18c90f1f-b2fa-5caa-9438-61165ba187d1,ng-diagram,2
+1e7670b8-9c8e-5276-8dc1-cc64be4d37fd,mcp-server-kubernetes,2
+2082cb7d-f6de-5f4d-b7aa-6df077cc4bc5,metals,2
+2169db34-2546-5b0e-b0e6-aa5d49a51e78,rust,2
+2b3a68d7-8050-5083-a4cc-4f2592ed1f5a,MCP Atlassian,2
+2dc8ea7f-d5b6-5cae-80ec-3600cf21a231,artl-mcp,2
+30da3356-9f5b-5c55-8aee-eef1d106d317,react-spectrum,2
+32fd382e-268e-5cdc-b5c1-8f42979ec72b,mcp-youtube-transcript,2
+3384ce4f-129f-5a60-a40b-be8298eb5744,github-repo-mcp,2
+37b8be1f-4f81-5d2d-bbb8-032111bbb85d,Trinity,2
+387de63f-5d79-5171-b96d-c9443a092b1a,stylelint-mcp,2
+3d93b162-058e-5865-9f6c-9e827c3948b8,docs.rs MCP,2
+43494a87-ae94-5875-965e-147358fe9374,Insforge MCP Server,2
+43d6a6db-85dc-5f19-988c-7fd705cdf7cb,mcp-memory-bank,2
+44aed3fb-6e8c-5b2d-91d9-6ffe5ec42cb9,shopify-mcp,2
+47734193-a467-5bac-a612-278f876c6c05,slack-mcp-server,2
+49e7a928-d9a5-516b-bccf-e421e67931ce,Google_calendar,2
+4f4e764f-facf-5ee2-a79f-0cd9071987a9,markdownify,2
+59adc519-7691-5fce-bd94-06c49605cc23,TypeScript,2
+5af8b5b1-da84-53d5-8f6c-437e8db76188,Draw.io,2
+5e47ec24-81e0-56dc-b6fd-93a0a3d17457,YouTube MCP Server,2
+63329933-6fe5-5a12-a9a4-10be33846f5e,@amap/amap-maps-mcp-server,2
+6e2a62b0-48c2-5cd0-95d7-3e7c7d9cbf16,mcp-serve,2
+70cc453b-8fc1-5701-896e-2775c5b076c7,osm-mcp-server,2
+70f44890-a935-5696-b9af-44e749100efa,next-ai-draw-io,2
+745956c9-974d-58ff-9011-6f0ee0c8660c,mcp-server-memory,2
+74cd35de-a3d3-59f0-b036-2790934bc5c2,MCP Server Resend,2
+7517c67d-5acd-5e0a-b95b-c71955089fba,mcp-installer,2
+75a4c0dd-fbbb-58c7-ac73-236700953838,mcp-mermaid,2
+817192de-ee52-5636-94e4-881f251963a5,Zig Docs,2
+84641713-2730-56a6-bc44-de1741f2b304,Reddit,2
+849dba99-a923-55e4-94ed-4b1c0b829926,Memory Bank MCP Server,2
+86b300f9-1eed-570f-bf14-e198bd30dcad,@mantine/mcp-server,2
+8b463fb1-9c7f-5977-8271-1821719fc186,Umbraco CMS MCP Server,2
+8be92ace-23a4-56df-b0c1-a880e43fc0e6,Databricks,2
+8d4c9b05-55fe-5844-8fad-307c1ebcf8e3,Shadcn UI MCP Server,2
+8ebfadd5-40e7-533c-9383-46a689ec9d82,MCP Selenium,2
+9177940b-4143-5fb9-a6be-ceb5344936ed,awslabs.cloudwatch-mcp-server,2
+918f6836-cc00-5b6d-83ec-67a3525198aa,Consult7,2
+9604a006-bcfb-550f-8522-0fc347bee321,Marine Traffic,2
+98d3234c-c4a6-5211-a31d-b8f78e1a5b68,Google Search MCP,2
+9f5e0390-4f75-53d0-b431-7aa86e523a67,Octocode MCP,2
+a3bbfba7-aa33-5d49-807f-ff1b13153e32,MCP Alchemy,2
+a599e3c9-7b67-5a3b-8d99-d9d57138b911,Vercel MCP,2
+a6cf6821-edc0-5f98-a415-d72aa783b748,drawio-mcp,2
+a795d9e2-6cdd-525a-8271-d1b4e16fabae,rust-sdk,2
+a7c3169d-4c8d-547d-8086-e4a6e4e0b027,MCP Server Trello,2
+af7cd584-1dc9-562a-9eb7-a987e8b65a0c,db-mcp-server,2
+af80ab44-66dd-524b-90d2-3d522ec49d37,ark,2
+b15fb9c7-d852-51f7-85b9-06fcf7911afa,mcp-feedback-enhanced,2
+b676d62d-8945-5fde-9a94-a9920704b77f,GitNexus,2
+b818e2d6-2d75-58d8-9c76-01d5e4c86b40,@padenot/firefox-devtools-mcp,2
+b950f105-a04b-565a-8e84-37914e29ed62,Higgsfield,2
+b9bc0f08-50d1-5d13-ba7e-8dad35c2743c,obsidian-mcp,2
+ba5c44c6-4ae5-5d3b-b835-596ecf6adc12,Knowledge Graph Memory Server,2
+c0308264-8585-59b1-a7c2-01c8f532502e,monday MCP Server,2
+c071be95-bce9-533c-a4b3-b29a33c399fb,Fledgling,2
+c3766886-52e6-5f34-a9ba-4bbbb34aa445,@mcp_router/cli,2
+c9da97aa-37ea-594f-bded-46dc18b8b297,work-iq,2
+cdcac3a9-46e8-5299-a3d3-da19904fcdad,@pipeworx/mcp-webflow,2
+d0c128bb-0f62-5614-ae23-3326190bed73,Ahrefs,2
+d2fcd786-6950-5321-873d-f75450bc3e82,git-mcp-server,2
+d7f629dd-5877-5cd9-b72e-d7aa3916ac3f,MCP Neo4j Server,2
+d803726d-898b-5006-9db4-0bb9130bbfcc,To-Do List,2
+d8604236-ec8a-55e3-bc8d-1678eb59723c,@mzxrai/mcp-webresearch,2
+d8f47e0f-1352-5c76-af6b-a7baee09594b,Apify,2
+d92af855-fe89-5248-a5a5-c2f3451beb45,@kazuph/mcp-taskmanager,2
+d9f2c30f-7382-52f4-b2ef-e1f8c59d05f7,Apple Docs MCP,2
+da61f4e9-e986-5327-b8a9-19b67edc1e2f,excalidraw-mcp,2
+dd7f57a0-bff1-5b82-a4ef-3cc118ce4bb6,claude-peers,2
+dfa33e7f-f451-516c-8f23-cab9438c19b1,EVM MCP Server,2
+dfed095e-34c7-587d-9ab0-0c0f35279f03,Google Cloud CLI,2
+e2d65e60-8e23-5483-9d77-568f90a028ba,DBHub,2
+e3ed0be7-b14e-5c52-829f-2cc6553ccf96,mcp-proxy-for-aws,2
+e63e8180-c20a-54e8-83ab-63027bd0e4e5,Google Drive,2
+e6dedef2-d555-5966-a8f2-c14b3b7396ca,Ref,2
+e7adfee3-2214-50dd-93ff-033cbc542b5f,Voice Mode,2
+e7b6692d-c635-58d2-a473-d9f883a34109,Dash MCP Server,2
+e8381373-6ce0-55be-83eb-adbc172196cc,alpaca-mcp-server,2
+e90741f8-050d-5aaa-8163-f20805572efc,Sourcegraph,2
+e9e60165-8676-5cb9-935c-a330d2019ed9,@igniter-js/mcp-server,2
+ea4a6818-62bb-548e-8203-2130a3703612,claude-code-wechat-channel,2
+eb563c5e-d5ba-56e0-8686-a53b209d7987,Etherscan,2
+ebfcdbdd-83a2-5835-a5b0-33e9e47b9054,Claude Code MCP Server,2
+ec1ba93c-a39e-5230-a340-087ed36fb204,mcp-server-tree-sitter,2
+eecba040-719c-5364-9182-a8dab407bd9b,CodePilot,2
+f433016e-14a5-5a7b-ae3d-a73f0646e9ea,ContextStream,2
+f5805f94-1007-5e2d-bcef-b7acec6b4fa6,@primeng/mcp,2
+f63a7ad3-9e21-5d5f-bff6-a987fd58aa68,desktop-commander,2
+f910a6db-143d-5476-bb6c-16ef981bcd32,GIS Data Conversion MCP,2
+fb64fe06-3991-5d5d-a87a-6d6d4da1270a,kubernetes-mcp-server,2
+fe359c4b-b290-5b32-8615-9ddd79e3338e,playwright-mcp,2
+fe9379e5-a04f-56a1-9cae-1cee0cc22cc0,Symfony AI Mate,2
+fed67c43-b1f4-5bce-b23b-abf568160e2d,MCP Ripgrep Server,2
+000ed855-3e4c-51a1-891c-1dbeda8e1dbb,Google Forms,1
+0026a8bb-e6f4-5c53-a061-97acf21e5c98,Neo4j MCP Server,1
+00630382-4508-5ff7-94d7-0dd122136c56,wealth,1
+00a1c3ae-4869-52e2-8e1c-48e9a3a96211,YouTube MCP Server,1
+01557d50-e956-54cf-8a6d-3d089ee9800b,memelord,1
+0177f86e-6e1c-5958-9fc5-189ae739efdd,jira-mcp,1
+019b161e-1e62-58e2-92e1-2479da9a124c,bitrefill,1
+0209f8d4-dd39-5f82-9d1c-07b843860bb8,Remote MCP SSH Gateway,1
+02d9c9cf-c7eb-5ef5-95fc-adbc4ef4622a,Grafana,1
+02ec9698-3bae-5afe-bbfd-6b0671bf4d3c,letta,1
+02ed697f-c43c-55a2-a44c-b1f415bbe3fe,aws,1
+02f41970-5c0e-5ee1-892f-a8ebf70cbb99,awslabs.prometheus-mcp-server,1
+03d046ae-f70a-5b33-bc2c-71103a203c6c,terraform-mcp-server,1
+042da2b1-382f-5ae7-a5b9-443f0790b8d0,codex,1
+043a763b-89ec-56c6-b3cd-393c26222202,Lex,1
+0469c500-ef2d-5021-9b9e-3cc0fbe6c8d5,notebooklm-mcp,1
+04e1788f-2ce4-576c-84c3-f262f488769e,terminalcp,1
+064163fc-b7d0-5225-b8cb-f86dd7d80d47,mcp-jetbrains,1
+0657372c-40bf-5496-bb91-bb0ab977fad9,post-for-me-mcp,1
+069230af-f5bd-571d-be0d-0a2a556bc2d8,io.github.syvb/publish-access-test-1778815297,1
+077099cf-48ea-505c-80d4-f4b1df771677,UTCP-MCP Bridge,1
+0784aa79-7e3e-59d9-a6eb-c57d82b0281d,claudeapi,1
+07e81dda-734a-5d02-831f-4b529ae94651,GitLab,1
+07f7f5a7-a808-5fb3-bd3c-a438279e3d12,TalkToFigmaDesktop,1
+080e514f-4f82-5ae1-a059-045c6d00d6c7,HooksMCP,1
+085082c1-c68c-5611-b728-517380aa39b0,UnifAPI,1
+088f4c8e-c85f-5ba4-b546-0498f4ebf15b,mysql-mcp-server,1
+08d3e61c-ae87-5867-9d0e-e6a2e37319e7,Watsonx.data Document Library Retrieval MCP Server,1
+09352a27-29a2-51a1-9cf4-00b0d280f431,playwright-mcp,1
+0a7f0bbf-741d-50e0-87cd-6c96980ebc5c,mcp-sequentialthinking-tools,1
+0bc3c184-d27d-5e49-828f-00eebee21aa7,Sentry,1
+0ce037c7-f4dd-5b0f-b31e-e769ebcce7bf,Paddle MCP Server,1
+0d19ffca-2d4a-564f-b70f-472326b1f6d9,MCP Server for stock and crypto,1
+0dc24aee-9f1f-5e0c-bc2b-e73f085ab59a,ServiceGraph,1
+0e6b002c-e754-5781-9a81-67745adb9c75,di-mcp-server,1
+0f0ac5f2-7cb6-5911-98c9-2a28bec2a47c,@morphllm/morphmcp,1
+0f63ed05-4de2-5641-8719-3441ee6acd86,brainbase,1
+0fc22fcf-f485-52d2-bc7a-0f4c156f8804,MCP Outline Server,1
+0fe62921-f7e3-5aed-94bb-8fda1be9c538,Docker MCP Server,1
+10688eba-88e0-5fbe-965c-90f59829ea27,gt,1
+10a2faeb-c955-5342-bfb2-db5fd0e71abc,mcp-sympy,1
+111fc1b9-b1a4-58ec-b3f4-65a83505af48,io.github.chernistry/bernstein,1
+1121cee8-52ba-573d-80a9-5081c5e553cc,renderdoc-mcp,1
+118e3c68-17b2-546f-a5df-01b61d40e662,WordPress by crunchtools,1
+11b5c320-5c76-5682-a03c-3ed893d9ea47,agenticros,1
+11b97ef2-406f-53e3-b8b4-a9b60b807d42,SAP MDK,1
+12002834-219e-5f07-ac65-207e0c772c12,RyanNg,1
+12205153-6d73-5f3b-a407-420acc4ff033,penpot,1
+124a5b52-6f2d-5e1d-87a7-cba06b29b086,Plexus,1
+125af17c-4f77-5fb4-ab95-1dc5af29f31f,cf-browser-mcp,1
+12814f7d-72ad-5f62-8ca6-54b09a6b891b,Miro MCP,1
+12b5b532-c388-5e90-ae7d-d7b2a9cf4350,MCP Memory Keeper,1
+12b6c717-9306-510a-9ced-b15cc6797a03,FileScopeMCP,1
+12fd3950-68bf-5f7a-b084-1a8294ab7543,strapi,1
+13053764-b3fd-5040-9122-ef698b78336d,@cap-js/mcp-server,1
+13502db7-937a-5bcc-947a-2d2e74eff66e,Twilio,1
+1351577d-4217-517b-a924-962a0b352808,Metabase AI Assistant,1
+140aaec3-b9a6-5726-bdb9-464e17227e01,Apple Reminders,1
+14283b7d-db5f-5cf2-b88b-98602a7116a1,Pcapy-ng,1
+14521ab8-be97-5f29-9bea-7f725b285dbe,QJudge,1
+147901f9-2327-5c3c-9e6f-a6c2c321d359,Zotero MCP Server,1
+14ab46d7-4741-56d7-9470-ab1a1463add6,mind-mcp,1
+14f7bfc2-49e7-5fcf-82c7-16f4af361fe5,Korean Law MCP,1
+15066e0e-a11a-50b7-bae4-b7d2d1bfbd21,Anchor,1
+15328343-8580-5b2a-9ff7-acd35f4c7814,Nowledge Mem,1
+158424dd-c006-5c58-8fa6-a418c99c6ea6,mcp-workspace,1
+15bbb783-0056-5922-9744-524b8d656d2f,apex-mcp,1
+15cfd3d0-5658-5686-9753-72ce0ad2f687,smallcode,1
+15f79a09-bd3e-5741-8760-9871cddb6b78,mcp-hfspace,1
+1607b542-eb23-5132-832a-f95d743eab2a,iterate,1
+16215cac-d8b1-5181-9855-cde1468e67b3,MCP ECharts,1
+166f1576-6719-56d2-bb69-da9229e4f6ca,GhostDesk,1
+174a30d5-1e43-5a8a-b513-1c34a9fe9794,Think,1
+178752e7-f842-5e23-8523-e3d7e3668f84,fff,1
+17a9e55e-6034-5488-9dbc-b41fcccb0274,com.thenextgennexus/finance-mcp-server,1
+17c7d2ac-a761-517a-8f2d-88bc4d2a114e,Novyx MCP,1
+17f1a5ae-971c-5fd6-ac92-3a85560c5dd0,NewsBlur,1
+18138a93-e5f4-5b94-aaf8-99f445a19e5d,research-assistant-mcp,1
+18152e8d-0f4a-5692-8235-794a76f61fb9,awslabs.aws-dataprocessing-mcp-server,1
+18afa3e1-04a3-5efd-bea6-76a5b2fcc901,salad_mcp,1
+18e0a47e-29c3-5b4f-b173-37b733341938,Markmap MCP Server,1
+18ee6f54-66c0-5b4b-b072-8ab5dc0caf58,e2b,1
+191f7b66-51b3-5ba8-93a0-9109949fe989,MCP-Server-Playwright,1
+19467e77-2c30-5b03-b68b-05408b619cbe,Code Lens,1
+19632214-ded6-5dbb-9a63-97445a68b0b1,oksskolten,1
+19e069f2-9dfc-511e-96cd-e19e91d63fcf,leonardo,1
+1a42afe9-35af-5b29-88e1-9ad7426ee8f8,springdocs-mcp,1
+1a5ce562-704f-5478-b090-66eedb8b1c11,Lighthouse MCP,1
+1aee22b3-7676-5a27-9167-676566d8d26d,Reddit MCP Server,1
+1b1101b1-f286-5112-a2f0-77dfe4f04c62,tauri-plugin-mcp-server,1
+1c1fdd36-4e00-5ebd-8034-e6a589e2fece,episodic-memory,1
+1c5221b4-fd6a-5be8-890e-a3ce52283cd6,Agent Ready,1
+1c5cb987-6bf1-5823-a5b3-b6b27330e5dd,twelvelabs-mcp,1
+1d099b1d-05a2-5577-bcd2-ca208375c320,Trade MCP Server,1
+1d4dd18f-21a8-585e-bafe-2ca7e3cd65a6,MCPBridge,1
+1d7eb12e-1000-58a3-aa3d-1a39ed534091,shadcn-ui MCP Server,1
+1d9f3bfa-58eb-52d7-8b6c-243f423294b9,meta-ads-mcp,1
+1dac663f-2f6e-54ab-ac1e-92d014bf5b52,analytics-mcp,1
+1e1ae914-ca99-562a-9ac1-f25593cd53fe,Nex,1
+1e225b0f-5dae-5b29-aa22-ed5fd795a2e5,fal-mcp,1
+1e685119-58ab-5e73-b6dc-95e415d29594,extract-design-system,1
+1ea718b7-e170-52e7-a417-b1cf4c40dadd,plane-mcp-server,1
+1ee7fb5b-e4aa-5a09-a05f-c1b3320038f1,crawl4ai,1
+1f160fda-320c-5e4d-8ccb-8d10aedfe785,Mindmap MCP Server,1
+1f3f5922-e19e-5a72-8d15-ec582f1af179,pg-aiguide,1
+1fc9a737-cebe-52d6-962e-255f61d21d86,browser-echo,1
+1fcf446b-6339-50f0-88b6-151a4a10e0d9,Postman,1
+202553c6-e283-5ca0-a532-944bd05c29a9,Agent Teams,1
+20858aed-efd6-576f-89d5-6ece7fdd6533,Time Server,1
+20fa0b3f-4fba-59e2-a8a5-5e7bbdb41c0e,kirograph,1
+2136c01f-3254-59fc-b317-1db5fd5a9701,Excel Search MCP,1
+21a49eb8-dce2-521d-a44b-1bc1ef9bb8c0,Travel,1
+21b2baff-baf0-510f-9154-b1b96b195942,claude-code-organizer,1
+22adc182-0a8f-5fb3-9d5b-5702000a70b5,agent-smith,1
+23171640-1674-57be-a919-a9216571cda7,@1ly/mcp-server,1
+234ad2c1-a6af-54b0-9640-823d148f8a49,kb-mcp-server,1
+234e6350-0a26-5ba5-b8e6-59bbc3748189,AiDD MCP Server,1
+237c7ffa-1e96-53d5-bd02-e6ccb9e6674b,Grants.gov,1
+238ad8cf-c14c-5b42-8ef1-8139a6a5b756,Claude Memory,1
+2469f21f-6bb7-5b1a-b6da-709e80173d12,@pipeworx/mcp-blockscout,1
+2485491e-76d4-5014-b487-ce6f3bb9a740,MaaMCP,1
+252e4371-4fe1-5518-9bb3-af434df32be0,mcp-fetch-node,1
+259de990-a34a-51cd-890c-8f7d57e92fb5,mcp-server-cloudflare,1
+25b7bf9d-6588-50bb-95d0-5ae54d15bff5,Yahoo Finance MCP Server,1
+25c8eada-5efe-5aed-8840-66e9c3661a69,@dynamicu/chromedebug-mcp,1
+25f84143-539d-574a-859d-65a71014ddc3,io.github.nailuoGG/anki-mcp-server,1
+264fc87f-615a-56a5-b0f4-01f1ef1b3450,aegis,1
+2678342e-9c6c-5df3-8e25-2c7ecfdb6ad4,ARC-1,1
+267d1eb5-b4fc-50d2-9bb3-a687bf938daa,nvim-mcp,1
+267efaa0-8d3e-5f36-bd6b-fc3d757f5be7,figma-mcp-server,1
+26cbda64-d122-5d5f-a91d-64a3cbca8dc0,langchainjs,1
+2717bd9e-dce4-5fcd-9265-853fa4e4fde9,Nano-Banana-MCP,1
+2726ced5-eb8d-5ae2-9c02-a34c38ad6026,crawl4ai-mcp,1
+280456c8-4b1f-58ea-9316-c6e636f57e75,aws-cli-mcp-server,1
+281148b5-c0a0-55d2-8394-810e90a5dfef,askme,1
+28a76c06-8093-574e-b501-5edbd07b01e6,Google Search Console MCP,1
+2919d918-a0d8-577c-aeb7-6f608f31711d,agent-discover,1
+294021f7-6e2f-5fc0-95c8-1c08936288d9,loopsy,1
+29eca189-6923-516c-971e-64aadc2d1dbc,qmd,1
+29f7f0af-d15e-5669-8d08-4c9712bed870,Datadog MCP Server,1
+2af9a7e3-bd5d-5d86-bd56-c988148f1c5c,@executeautomation/database-server,1
+2afdb3dc-953c-52fc-8a34-5b08b4f19738,MySQL MCP Server,1
+2b37bc28-78a7-55a8-974e-2674311b756b,domscribe,1
+2b77d0aa-7b38-5147-8161-965791aec3c9,Magpie,1
+2bfafdab-b11c-57b7-accf-b19a781c8319,Redmine MCP Server,1
+2c320a3e-9e06-5944-888e-96ad57e9a093,Ybe Check,1
+2c39dab9-5341-51bc-a43f-b32929ec0f56,indxr,1
+2c7475d3-a102-50ef-bbfe-44aecc8cb6c5,better-context,1
+2cdf234c-077c-5f11-a001-a02c023f89a5,agent-chat-mcp,1
+2d07678b-7ddf-5579-9605-62c0cff18097,Microsoft 365 MCP Server,1
+2e56bd2b-b627-5e0f-a896-d7f7e7e7a323,Solana Agent Kit MCP Server,1
+2e6102b0-8f8b-5563-8102-d129fc20f434,MCP-MCP,1
+2e69c9f5-98c4-506e-8600-741fcd3ccb8a,neo4j-memory,1
+2f14c4fd-2bd9-53c1-be78-e78dac09cf9f,mcp-server-trello,1
+2f477061-2161-51a5-92f4-f0a881c9848b,io.github.HaD0Yun/gopeak,1
+2fd8b295-ba21-5ad3-9ad9-75b1e2c1b288,apra-fleet,1
+30bab7d7-050c-5309-8e0b-80b95eb03505,mcp-server-everything-search,1
+30c8090e-b08a-54d6-96ec-6ad6ed5330bd,mcp-adapter,1
+31404550-3b1c-5a94-874a-7c33280aa491,agentsmesh,1
+31556c32-770a-57d5-926a-94f6560748d5,crates-mcp,1
+315cdc7f-fec2-5ef0-b98a-bbf28af09b38,oxbow,1
+31787000-c5cf-5659-9fd5-4aac16ce9e17,awslabs.cloudtrail-mcp-server,1
+319d9e0a-ec79-529d-8637-529b6de6bf79,MCP SQLite Server,1
+31d7fd80-51fb-5cb2-bbe9-f4552da5c65f,Python Sandbox,1
+320a1a0b-6b3c-52fb-9def-9706829def14,@oneentry/mcp-server,1
+321b724c-c57d-51cb-bdca-ecff6bd02253,SpliceKit,1
+323a10ea-e5cf-5a6d-a410-99b52058c01a,trusty-memory,1
+32bed433-9f54-598e-a2d8-bc8c4c8cc63a,apifox-mcp-server,1
+32c99901-de02-5f57-9ec2-3560c73f6e88,Pokemon Paste MCP Server,1
+32ccbaad-fccc-5c18-80fe-43130a984a56,MCP Debugger Server,1
+32f90b57-e8f1-57e0-bdf1-d70b36af7d09,frida-mcp,1
+331ddff4-8aca-5f90-82ca-5124593fc916,ha-dev-tools-mcp,1
+3333c249-0363-5380-aac1-dd319c3e6b37,arXiv,1
+3342c24c-c230-5570-8fc3-b045ef800269,open-ontologies,1
+33856262-d82a-57f8-b16d-a2dba7bc0acb,Shopify,1
+341f480a-fd42-5f53-8c8e-fb8513308612,Godot MCP,1
+342940e9-b7d0-5118-bc9f-c0507c5f5c95,Mind Map,1
+34a623dd-88be-5980-bc3f-a53c8d61f833,Open-Brain,1
+34acde19-b846-5420-9d31-f9b04ac48bad,apple-notes-mcp,1
+356f7005-6f0c-572f-88bb-f7d9a4c5ed2d,Kaggle,1
+35b08674-975d-5b22-ae4e-09aa87b23040,ZeroToken,1
+3668535e-4c90-5217-8982-8a6a03f5a428,langfuse,1
+36765af9-6448-5775-92af-b55554afa484,agentic-codebase,1
+36a09c18-256e-573c-84df-149d91149c17,motion-ai,1
+36e3fbea-50be-5937-a7e1-1f8f7e26b03b,Crypto News Feed,1
+377c7be0-08b2-54b3-aea1-09c61eb0622c,GitHub MCP Server,1
+37cbfd24-19b2-5059-9aad-c0bdab4a3db5,Fetch MCP,1
+37f28188-630a-57c2-9ebc-d2a773655dd3,MCP Server Generator,1
+380099c5-6ef4-5350-aa8a-f9a44f8b0a3c,spotlight,1
+38438275-84a2-55e6-bce3-a8db2aa417ed,google-drive-mcp,1
+384c068b-19cb-5cac-a7a0-fce2d628f602,PageMap,1
+384ef12c-e82b-5ea9-b079-6ba69aff95e7,AWS Cloud Development Kit,1
+387849ae-a4b6-5c53-b996-bf189be2681b,ai-memory,1
+388cd322-bada-5b86-a68b-3f21a0fd1c4d,Dependency Checker,1
+38d61dba-6067-5380-81bf-ca515625fadb,Scrapbox Cosense MCP Server,1
+391417c9-5821-540a-bcf8-90036de603d6,X Twitter Scraper,1
+3953e29b-f996-5fa8-9e55-993bf5646d90,Xiaohongshu MCP Server,1
+39e41246-2083-5d70-92dc-5abd8bc96611,@kamiazya/whiteboard-mcp,1
+3a0cf79d-0796-51fb-922e-584de8cd1d04,Stateless Agent Memory Engine (SAME),1
+3b1e9af5-e723-5772-bfda-745c0fdbb158,github-mcp,1
+3b35665a-2735-557a-a563-99b3d7f12d7c,Recon-ng,1
+3bd72cd3-1b0c-57a5-9f96-092f41398bfa,Hyperbrowser,1
+3bf887cb-7d2b-5872-aa23-c71f258d3536,bing-cn-mcp-server,1
+3c242028-b511-576e-8768-3f68ed4447d0,grepika,1
+3c43719a-2065-5f38-bdcb-47a09ca2baae,Attio,1
+3c65291d-acde-508a-9377-4fa40159e557,yahoo-finance-mcp,1
+3ca4f12f-d3e0-58d2-b697-a102930e2e14,io.prisma/mcp,1
+3cda51b2-a0aa-57cf-87cb-ef349e1134c4,codanna,1
+3d02c404-4ecf-5e1f-b37a-2af526de1528,Google Workspace,1
+3d0593c1-c6e8-55ee-b27d-6ac7150188c5,remotion-media-mcp,1
+3d1235d5-adda-5e0a-b623-ce401877f5ed,dkg,1
+3d40228b-c0ba-50e0-b82c-892d2af6b643,AgentVibes,1
+3d7ca2a4-0026-58c2-a562-3f42d4822439,Pokémon VGC Damage Calculator MCP Server,1
+3e26a753-c480-514d-93e2-82448b5277f5,ThumbGate,1
+3ec2c6c8-26a6-5b8e-9621-6e0de3b34195,Claude Team MCP Server,1
+3ec4b617-46dc-56c4-8c25-9904738dfc40,Brave Search MCP Server,1
+3ec600a3-a7c0-5ec1-9bbc-d34630047064,research-hub,1
+3f0c3a6c-ecef-57c5-a982-5254c5f599cd,advjs,1
+3f14ae40-b578-59b5-bd20-d23730d9ca30,Stability AI MCP Server,1
+404d93c6-d1da-58e5-ab45-17517116b0f0,Intlayer,1
+40fcec14-d249-5623-a98d-7f765c2bf9b4,RunPod,1
+41a7113b-2aeb-5e28-892e-df5f40f2c9e4,claude-mermaid,1
+41b04bd8-6c69-5025-8937-cea4f0492861,Clerk,1
+41b45564-8a02-5c47-b2a6-2f53a94a9326,melta-ui,1
+41fd805a-ab9c-56b4-a202-6f14f426ff97,mcp-google-sheets,1
+42be2586-f535-5877-a9a5-690ea08f3873,Pulse Fetch,1
+42eb74de-fec7-577d-b539-02327122d72f,WinScript,1
+43024650-36ea-5d6b-a299-3fe0e7501815,gopls,1
+440ba952-070c-5339-be08-aa9529b42857,Godot,1
+44499408-3f31-51da-951e-c348a5ead049,Personal Finance,1
+44976c4f-2716-5fcd-99f2-565479de8d04,awslabs.eks-mcp-server,1
+44d849e0-d5ad-529c-ac9f-063c56fa58ba,analytics,1
+45940144-9707-5e9a-b197-c02838631e0f,pubmed-mcp-server,1
+46c2f73a-7beb-509a-b688-a1d641491bba,cli-mcp-server,1
+489e7d66-2180-577b-8618-5d5f02884761,pinecone,1
+48ad4fc3-f8d6-53e5-b3f1-cd4fc96c8a67,Dev Proxy MCP Server,1
+48de6dca-7aa5-590e-9ffd-f453f760c5a2,flutter_mcp_server,1
+4920417b-7c77-5be5-8745-ca617a6d1273,everything,1
+4952d9f4-275f-5883-bd86-2cba9d183efd,Reasoning Commons,1
+497debc2-d61e-591e-b094-0a391819136f,Atlas,1
+49d25792-faef-5dba-b280-228bd42403ac,schedcp,1
+49ffd7de-3603-5bff-8ebf-e6ecfb7520a8,linear-cli,1
+4a69c647-5a4a-5b1f-90f0-5368a9b0e4f7,CSS MCP Server,1
+4a9c392c-0636-572f-8cbd-15ff695f239c,Emacs,1
+4ab1ce0e-605b-56db-ab6b-04c5818c3196,mcp-server-time,1
+4ab9d525-a52c-52d3-8374-9724e929457a,beads,1
+4ac6e897-31a4-562c-b26e-2ab6f1a550a4,Apple Doc MCP,1
+4b34af6f-04e2-5aef-a431-72ad45a81acc,webdev-mcp,1
+4b68e69c-b243-5433-9caf-83edafbf26ea,LazyOwn,1
+4b6c2324-7853-5214-847c-863dac72e95c,Google Search MCP Server,1
+4b7c9956-03c2-57e5-a284-80ccde2378d4,speak_when_done,1
+4bce22a9-111d-54a3-a5d7-9f2ac8ddc5eb,real-time-stock-mcp-service,1
+4d210b96-a895-5c69-bd83-0608878721ed,DuckDuckGo MCP Server,1
+4d4a779d-7fab-572b-aeed-b1a6f3c0ddaf,xhs-mcp-server,1
+4dc6b13b-7382-5342-92b7-4c1d12326830,trusty-mcp-core,1
+4dddbdfc-c611-50c6-98cc-be6726746f01,seed-design,1
+4e0024a5-7e50-5d4c-9eb2-286324ca2b8a,agno,1
+4e605aea-295f-571f-857e-16192e3096da,Pylon,1
+4ea64f10-3d93-5bbf-ab2a-01ad07bb9996,EmployeeMcpServer,1
+4efeb6c8-4e16-5225-9a49-20eff7833ba3,BambooHR,1
+4f1cf80e-5830-5f1e-bf37-04c82259cc59,agent-harness-kit,1
+4f61beb2-89a5-5ef4-9e9b-0d36f7264e39,MCP Modus,1
+4ff29cb5-a10a-567c-b089-7c52b67bb18f,DevRag,1
+500c8b2e-02cf-5458-a427-81a09776403f,Reddit Buddy MCP,1
+5042c586-cc66-5748-adc8-4dedf0eec2a7,YouTrack,1
+5106799a-1cf4-5d56-a4d0-5ae332dc51a1,Google Scholar Search,1
+52d86ee0-fb5c-57ab-9cec-2da9c5fe8fa8,Drillr,1
+52ff0c59-f4ae-598e-85e5-52327905ce65,PostgREST (Supabase),1
+5384873f-1b82-52f8-991b-86716dfee28b,io.github.MetaBrain-Labs/comfyui-mcp-server,1
+539e38b5-3cda-5f7f-aea9-0ce9c7cf3b98,@agentmemory/mcp,1
+53fd9385-fb53-5e1e-b636-ccdb5486e9ef,Trends Hub,1
+544690d5-0e8d-5565-adba-5a91ae77c7ba,@z_ai/mcp-server,1
+54aa6da8-fa3a-5fe3-bb6f-f8b71d450e35,Reddit Scraper,1
+54dd470c-440f-552c-80b0-b0c310601bc1,browser-tools-mcp,1
+550bb50d-915f-53e6-a563-bba213937677,pce-memory,1
+55838ea7-b195-5462-bacd-a8b1fb40e6c4,mcp-neo4j-cypher,1
+5594eaf9-3278-5854-80af-81fdaacbda7f,Tigris MCP Server,1
+55dca74d-7bd1-5cd6-93f3-9f3c9a603146,executor,1
+5704b60f-72fd-54cd-99b3-c5faf4d0245d,deep-research-python,1
+57271bcf-e69d-5e28-aad8-678678a58613,wopee-mcp,1
+5787fbd9-328d-5132-a5ad-cfe8008f6890,IBM Cloud CLI,1
+57d62605-8f93-5f89-ae26-48159aba74ae,MCP NPX Fetch,1
+57f92c61-55e6-547a-8770-88e67b40c25a,Motion Studio,1
+58661489-f460-5eb1-a31b-60e72f53ac33,Roblox Studio,1
+587c4df3-4f87-5028-8d6f-b175f0778bff,dappier,1
+591560ae-37f5-5ba3-abd7-84bec90b0561,Coolify MCP Server,1
+59f759b2-74f2-5527-a642-c80ed22e6d15,Supermetrics,1
+5a328f21-6027-5e3e-b446-df5e659d9a41,mcp-omnisearch,1
+5a868f08-372a-5fbb-8a9a-3a1f6a126113,io.github.Agent360dk/browser-mcp,1
+5b27815e-a029-53e4-a484-d4d92ff9701f,argocd-mcp,1
+5b377804-8840-5b75-9092-a37e43f07f30,MCP Think Tool Server,1
+5b8aee0a-cf5e-5c2e-a42d-5869fcc7bded,logfire,1
+5bd30f88-2cab-5fc6-aa25-ab36cec1a9c9,Code-Oracle,1
+5bf84340-807e-5086-b60e-d8d57c61085e,observability-mcp,1
+5c6bbff1-5cab-5e27-ab7f-bfa574cd90c2,Klaviyo,1
+5c8df39a-5de5-5e6e-8a5b-94bf5534c3e3,@arizeai/phoenix-mcp,1
+5d0f094a-f6cb-5556-b8cd-81ba2d52bc8f,Claude Skills MCP Server,1
+5d23e24b-80c3-56c9-9d32-db44ff186d97,Nometria Deploy,1
+5d5e1ca1-0bca-5ac5-849e-256fa0bf679c,mcp-confluence,1
+5d839589-7636-5557-b7b0-c9ac9b363538,SSB MCP Server,1
+5db32846-a87f-5532-b7c9-feb540a7dd8a,nx-plugin-for-aws,1
+5ed2d757-5c04-50c5-8fd0-189cf994076e,Flutter,1
+5f3e2cfa-d941-5491-9ca2-83b6a4a0f9b6,OpenAlex MCP Server,1
+5fafa7f3-758f-5783-a5dd-bde41dd0898a,knip,1
+5fbce8d8-d304-5693-8576-5777c48f002b,dreamy-ui,1
+5fc39e6f-47ee-58c7-a6d6-95de777c55b0,mcp-feedback-collector,1
+606a270f-2200-5e54-adb2-84844b59b6cb,OmniFocus MCP Server,1
+607396ee-7bd1-5753-87dc-bf128c64d6df,Salesforce MCP Server,1
+608da987-6f45-595e-b4db-c2586fda60e6,@fastly/mcp,1
+608e6c4d-8d27-52ad-a576-993775108371,Temporal Cortex Calendar MCP,1
+60e1785d-a664-5550-b2ad-b63c483818bf,Jira MCP Server,1
+617c1aff-ac9e-5998-995b-53c56b8d761a,PageIndex MCP,1
+619006a4-035e-5b91-ac8d-e8ee5144f115,tvscreener,1
+61970313-bf54-516e-83f9-b8dfc8854c12,mcp-server-npm,1
+61b103c2-13a7-5eb8-9dff-8229b8c92fab,sage-mcp,1
+61ed314b-d416-578f-b5b5-1ac1d2a15cc3,mcp-chembl,1
+61ef017f-3ccc-509a-a561-d6061e26b453,echo,1
+6325b58f-e467-594f-81ef-2537c7b16fcc,SE Ranking,1
+635597f7-aa2d-503c-8c86-c6c6bc615861,Graphlit MCP Server,1
+645d025c-4c77-5fe9-83a2-cfffa4b60912,versionator-mcp,1
+649b8657-d88e-5b02-84bf-773cbf59113f,BudgetFitter,1
+64eb1f88-6752-5a04-9b6c-ec0467fb0e66,@pipeworx/mcp-odoo,1
+661c66f4-6f0d-5569-bf3a-2396d32f1c1a,nitrolite,1
+66cd8408-46fb-5d39-a3e8-0e10b4e6b4c0,Ctxo,1
+67331a45-cef1-52cd-84b8-e5ac36ec70e2,entroly-context-engine,1
+67c7f59d-03f8-549f-acc4-dfa8e8f06f1f,deribit-mcp,1
+68213dac-1427-587e-91d8-eedf4cd4e61b,Google_maps,1
+682d6f51-bf14-5ac6-ba44-986fec5ab06c,OpenDia,1
+682e1cad-38de-57e2-9b99-041893264b1d,rust-mcp-server,1
+68af83c7-b06f-52c5-89c3-ae9ef444d543,mcp-server-qdrant,1
+68b7d1c1-da05-536c-a225-79dfea6a35e1,patrol,1
+6915484b-5a9d-569d-a6ee-a55231bbdfcc,Clerk,1
+6950d6dc-b897-507a-912d-b8c5e2d09d0f,sequential-thinking-mcp,1
+69bbbd86-90ad-500d-b85f-04aaf249927b,MCP Server for notify to weixin / telegram / bark / lark,1
+69c4fbf9-bc4d-5b4e-b841-86e83618f759,Shopify Admin,1
+6ae2d263-ff94-5f1f-9fb5-f1fe4845161b,atlassian-mcp,1
+6b58d0ac-802d-5308-9171-1901a41dc782,ferroscope,1
+6b98f9be-9ad0-5439-a5a5-650af0fad948,leanspec,1
+6c02c6ce-36fc-5689-a822-84e45ed7f4c8,MCP Compass,1
+6c04215a-f122-526e-be3c-fcf4d4e4053d,Cloudflare Logpush,1
+6d47cc18-37eb-5f2c-b71a-63e39e31f781,Actor-Critic Thinking MCP Server,1
+6e74ca35-6326-5a24-8af0-cd5e08bed1f3,com.gitlab/mcp,1
+6e7fbbcd-6fe8-5641-bec8-58d215f73769,GridinSoft Website Inspector,1
+6eb063be-ba94-58ac-a6a1-5a3d34203ada,Vapi MCP Server,1
+6eb78c55-5a71-5d4f-bcc2-d900ea3c311e,Hacker News,1
+6fb1b7b5-d72d-5a2c-9b6f-dc456bab402c,multi-ai-collab,1
+6fb8d39c-1d9d-534d-8060-64ad9ec9d881,figma-mcp,1
+707c32d1-1fbf-5386-abff-348506421975,awslabs.postgres-mcp-server,1
+71681587-22e1-531d-976a-018423af094b,io.github.yuvalsuede/agent-media,1
+71814f9b-2599-56c3-8832-db301a663558,MinerU Open MCP (Official),1
+71c69067-8685-50db-befd-e6d120c471bb,OpenSCAD,1
+71e057b7-300c-5fac-9ca0-6e91952c83a2,agentic_auxilary,1
+725a3fbc-6600-516d-925e-14c51c5a8674,KotorMCP,1
+732c2d24-e7c3-51f0-af8d-c89bed49540d,PostgreSQL Advanced MCP Server,1
+736d8099-b8ed-5942-b92a-6c6c5715e9d0,auto-agent,1
+738883aa-96e8-5dcc-bedd-9a253f98bc91,Intercom,1
+73c7dda5-9664-560e-b548-6100fe383365,ClawPay MCP — Non-Custodial x402 Payments for AI Agents,1
+73de6794-148e-55c5-b622-1cf57d635646,Ask MCP,1
+741e777b-c59b-5ec2-a346-156242a059a9,hostinger-api-mcp,1
+7432fbb8-6467-5829-89b1-11e686ab1779,Zoho books,1
+747bf521-271e-5eea-9672-53c403532d49,cangjie-mcp,1
+747c0c82-4565-5716-8f5b-98884ca8a5a6,timeweb-mcp-server,1
+74ccd03b-1618-59cc-adeb-0bfc98295742,dbt-mcp,1
+75466e9e-6cda-5ce1-9768-d9ecdb55ba12,STRING DB,1
+75674629-668c-5f51-8ca7-d4f4bb2fb290,shadcn-mcp,1
+757c2c05-1f49-5d61-ab33-d969a55796b6,Omega,1
+75b06133-988c-51e5-bff2-9e03fd38ab01,Time,1
+75f06a53-ca42-5643-9740-72da360571e5,voidcrawl-mcp,1
+7656dfa2-d464-5a90-b6db-0e83cbac0bd5,agent-zero,1
+76585a84-3a85-5acf-9add-d8925126ec93,Close,1
+77821c90-a4d2-57e6-9f58-ba93a92b222b,ContextEngine,1
+778308d4-a45a-5211-8110-54ed004a6cd9,ai,1
+78c43cb2-75a6-5ea6-b7e5-126637ab3ceb,KiCad MCP Pro Server,1
+7992ef57-0782-57b6-936a-5d8f108fa5b5,Mapbox MCP Server,1
+799f1051-1456-558f-bb86-cf274405e4e2,pytest-mcp,1
+7a3dd3e1-b6bd-5913-a9fc-58fc7c0b776b,hud-mcp,1
+7b42641b-da13-502f-904c-0ba2f17056ac,@pipeworx/mcp-activecampaign,1
+7b68eeb7-6cac-5275-813e-8ca298106527,Create MCP,1
+7b9dd937-40ac-50b1-a68a-c086b35bfc2b,DuckDuckGo Web Search,1
+7c2e5e46-c5e3-567d-a98d-72467ba251fd,AgentBridge,1
+7c473c2b-5bbc-5aea-a142-fb73bfc688db,Sourcebot,1
+7c55b5f3-e266-50f5-bebb-efd5dab5f5b2,voicebox,1
+7c596d20-47c3-5cbf-9a38-65a129c89b31,Instantly,1
+7c644aea-457c-53bd-ab8a-643e4b460b38,typescript-sdk,1
+7c648e21-d7c5-5a72-9a01-d71ddfb64a4f,BrowserStack MCP server,1
+7d1b9b64-3055-5f80-9f3b-ac92967bc8b6,seer-mcp,1
+7dacaeed-79c3-549c-8658-5b3aad4fbb1e,MCP Prompts Server,1
+7ecf9618-84fd-56b7-88bd-300ad491dba1,Deep Graph MCP Server,1
+7efca5fc-57db-5628-9f1f-f5f62970cbea,Skillsmith,1
+7f0270c1-e665-5b15-8d6e-5a233f2f1a07,Hex,1
+7f04b51e-dc3f-5a87-a8b4-f1633f4d1e29,AWS Documentation,1
+7f0e68ff-4e01-5efa-b7ae-8c19de42f05b,@turbot/steampipe-mcp,1
+7f52653c-254a-5d05-bfb8-f59a07fa3ccc,Mapbox Docs,1
+7faa8ce8-8511-5ad2-be47-c17fe4e7e62c,xiaohongshuritter,1
+7ff733c7-b707-56b5-9de9-061f7184c671,WordPress MCP Server,1
+803e2449-cf12-5835-8489-ec2f30c12610,finance.double.agent4/knowledge-base,1
+803fc9ab-89d0-5886-8be9-774f91dbe000,TermHub,1
+80407413-41f7-52cd-8a48-ac180cc7f6c9,Terraform,1
+805626dc-8a71-5664-9f00-e991f7127671,figma-console-mcp,1
+80d60d30-93a8-5efb-af0d-de0d39f002b8,macOS Automator MCP Server,1
+815f5a61-a9d0-5ff7-a380-1d59ba5eabe0,autotel-mcp,1
+818c5639-8f53-5012-b5c4-a779f739c4bf,mcp-ragdocs,1
+81aed3d8-269b-5f78-88ad-f8926349aad3,data-api-builder,1
+8202c89e-d5ce-5e53-a1b8-9d03b65707b0,Todo,1
+8382d78f-aeb3-547f-9cb9-f56ac39ba417,tapir-archicad-MCP,1
+83a2e489-42dd-5470-ac34-787ef7ec159b,applovin-mcp,1
+83a746c1-a79b-56e1-90ab-6f3a529f26d2,js,1
+83f5f2ef-849e-58a4-8a1c-ac9fa2097229,iOS Simulator MCP,1
+84313292-7df6-57f6-8ec9-719ebc08cf1e,Sverklo,1
+84559e4d-6624-5e7c-8547-be7b8a3f24bc,awslabs.aws-api-mcp-server,1
+84e73e66-b0ac-5804-892b-2908332a8e66,EverArt,1
+857e2b69-742a-554d-956b-01fa9891ec33,@fanyangmeng/ghost-mcp,1
+85b86988-40f7-5bd8-a391-cfd20e525b6e,BinanceMCPServer,1
+8699479d-60f5-500f-a4e3-5cbea6a80271,mcp-server-airbnb,1
+870bf165-17a2-5e5a-b676-bee70bec318b,Linear,1
+87a5f918-9ad4-5a95-897a-e78a44937f25,claude-vigil-mcp,1
+87f55ce6-c268-5b5b-b381-ab72eb96db6a,Cursor Rules,1
+88591e46-c907-5a22-b133-65eab56d4488,hass-mcp,1
+894d9971-97cc-5cc1-a504-950ea96a193b,MindBridge MCP Server,1
+8a64f0c1-9c8d-5a04-989e-51adc8c0c789,@lousy-agents/mcp,1
+8a698d0f-882e-559e-8a87-b9457b6fb094,baymax-agent,1
+8b918c1c-13c2-5b52-90f7-924c44dee894,BrowserOS,1
+8ba1ab28-5b26-5d14-8bd3-695fb34b3810,Forgetful,1
+8e13e94f-fe6b-579a-a94d-896b3d0574a6,zotero-mcp,1
+8e32e468-ad0c-5e1b-8318-78f3826e2e7b,mcp-fetch-server,1
+8e53419a-9f63-5de1-836d-6730131e0480,hoist-react,1
+8e8142bc-c1a6-50fe-acb6-24fa639a10b5,Google Calendar MCP,1
+8ea7f425-07bb-531a-98c6-934c331e6641,Slack MCP Server,1
+8ed47972-648e-52e1-8e51-e202b36e96b1,cursor-rust-tools,1
+8ede6bb6-8a0a-5b77-8fd9-7bea9ae556c6,Skill Seekers,1
+8f0179b7-8ed0-565d-af2a-4541bdbc65fd,Pare,1
+8f417386-b265-5cc9-b8a1-785bfc14223b,arXiv Search,1
+8f4db4b2-0305-56b0-bb5d-444f3221d263,Youtube,1
+902693b7-39a0-5193-93da-cf6c051dfa3b,Kronos,1
+9051b191-aa57-5b43-adf1-f58222fa7ad7,json-render,1
+90a5d268-d05c-5eea-a491-55e8584ce3cd,awslabs.frontend-mcp-server,1
+91da56cb-f372-5028-8690-0297fa36a057,karellen-rr-mcp,1
+91e304cc-07c1-54e3-a2a9-ee60b31ef350,llm-context,1
+91fc7823-c6d7-5fcd-a750-1523695aa1d7,Cursor10x MCP,1
+921803e6-c8f1-5a97-8609-9db8c70ed79a,mcp-sequential-thinking,1
+9259fe59-b54c-542e-9f3e-dc2397652b31,Quickchart-MCP-Server,1
+93497277-821b-5d08-9c50-b60237f5f8d9,Pipeworx Steam,1
+9374be30-7525-5339-90ed-a0b54f85a796,@fre4x/arxiv,1
+93dcb361-97a4-580e-845e-d50978f630fc,sc-auditor,1
+9400d94d-e60c-594c-8fda-7eddf646f925,mcp-simple-pubmed,1
+94379d3c-5054-5ce3-ae26-ad836ea77b30,Freshdesk MCP server,1
+94d2d56a-cb09-5366-9ed4-ca86533ee00b,RetellAI MCP Server,1
+955eb071-2302-599c-b8f6-090c56f9147b,Prisma,1
+966ab96d-bf45-5956-95b1-4b065f87ec3b,bugsnag-mcp-server,1
+967145d2-a5a2-571f-b0fe-d1b7b245eab2,MCP Python Interpreter,1
+968c2469-3db4-5d6a-8f1a-e96347cf4447,tradingview-mcp,1
+96cfcd91-08ce-52b7-bfbf-18ff2cf23430,Skiplagged MCP,1
+96dac609-7849-5b32-be36-206bf78c4ca9,DataHub,1
+96e02ea5-5785-52a3-a784-6d92223045be,Waveform,1
+96eac01d-591f-5d78-acd5-d190f13af74d,aida-mcp,1
+970042de-9b8c-5464-9cc4-e8be64d6ad94,Mixpanel MCP Server,1
+970d6f40-6f97-5144-a1f0-7aaf2fee30a5,AgentQL MCP Server,1
+97e336d1-7e52-5f5d-8ed2-10f611da8bf9,MCP NodeJS Debugger,1
+9827da0e-721b-57da-97b7-bb0d4fc2232e,NPCTerm,1
+983f9dba-fa85-5590-bd55-360e300752d6,Airweave Search,1
+98577c1e-1c30-53fd-a28b-cd154a6e3e48,acp-mcp,1
+98b91d04-359c-5f12-a57f-1d0328134939,atlan,1
+99389404-7ac2-5cb3-9f90-25b94074c121,patent-search-mcp,1
+99d3ed87-0f22-56d3-b91e-87ad1b9aabd3,awslabs.code-doc-gen-mcp-server,1
+9a2f9aab-8a9b-5da5-85d0-2a42604a82d2,time-mcp,1
+9a50f931-bcb6-5a07-8be0-2546d814fe71,Slack,1
+9b9f1c69-acb3-527b-912d-f778cef1f275,clueprint,1
+9bab9de2-9a20-5584-aa6c-b6e4881a5c66,codex-mcp,1
+9bf08879-9009-561b-ab09-a1d3bd1252f2,@physics91/openrouter-mcp,1
+9c22eed4-03b8-525d-b12f-1521f63c058c,ai-software-architect,1
+9c44b262-44a0-5af8-9bac-d63f20ea6af8,NuGet,1
+9cb5898b-8479-5c0f-9622-364da88308e9,TouchDesigner MCP,1
+9d0f2875-28db-5a76-b2c8-592011909fa7,npm-packages,1
+9d2b4149-67de-522a-acaf-c27066dc0aec,InfraNodus MCP Server,1
+9d7c08e4-a090-5567-ae5b-88f8b3399682,tdmcp,1
+9e4d76a2-f148-5a7a-b6ad-c1e5bbb63183,LangSmith MCP Server,1
+9e5b673a-e52f-560a-959c-8587abc2c6ed,Mailgun,1
+9ea6fe02-0ae0-580b-9fe7-5bbd49f901d2,agent-shadow-brain,1
+9f174682-9358-51c7-a871-186f315308a6,Boilerplate MCP,1
+9f2663a3-c170-56b9-b602-0948df533d8b,mcp-fetch,1
+9f2d34fc-f684-556c-96c4-940dc6c1ecbf,Draw.io MCP Server,1
+9fc1cdfe-b2ef-5273-ae81-c5c39a44af27,Apple Notes,1
+a04d89ce-e679-50d0-ade2-7993de191e90,zscaler-mcp,1
+a075aab7-f081-5547-a8ea-2d71aafd2e64,mcp-portal-transparencia,1
+a0fe42c4-50c0-59d2-bd01-7bd12e01fd17,Overseer,1
+a14cb892-7a98-5df4-8456-cccf475428de,code-understanding-mcp-server,1
+a18baf58-53a4-5deb-bdc4-dd345df7fbf5,mcp-rest-api,1
+a18e63c0-4b8a-546c-a275-755d1aee7b00,io.github.addozhang/nexus,1
+a1cf9731-d8c4-5297-b5e3-c58d1ce7c0d5,@magnusrodseth/shadcn-mcp-server,1
+a22358cc-66ec-5d36-8daf-e961fbe75baf,airtable-mcp-server,1
+a24de2a1-2da7-566f-9ed6-944d743780f6,open-agreements,1
+a26f44b1-798f-5fd4-b625-449f4a99da1c,mermaid-mcp-server,1
+a2cfa6cb-5a44-5545-b506-29cd72439ebb,mcp-server,1
+a3e2588b-4a04-5662-95a6-99b98055b150,after-effects-mcp,1
+a406586b-51f7-5d5e-8e25-daaac23bf0d6,switchboard,1
+a444b183-6d7a-5521-b4f4-11c7c701340f,linux-mcp-server,1
+a5637aab-fb11-5f7c-b39d-63c465d5891f,distillate,1
+a57b652d-b810-5dbe-991b-eaad1576dcd4,DigitalOcean MCP Server,1
+a614e2d5-164f-50cf-9675-87baf2401b78,oura-mcp,1
+a62239dd-a7b0-5795-85e8-4023b1c02ef0,Markifact,1
+a6b6e1d3-1956-586e-b860-f9fc0fef9f75,@instawp/mcp-wp,1
+a6f470f5-c5ad-5080-bba7-1d90ae8dcb50,Hono Docs,1
+a77014c6-884d-515e-b23d-3dcd8aeb766d,Home Assistant,1
+a82125c8-c461-501e-8a66-d00abd9790b0,mcp-server-fetch-save,1
+a848d2b7-157b-5173-bda6-54630e3527b1,mcp-uniprot,1
+a86dee69-dfc9-5674-9c1d-1c39f807e0f6,lean-ctx,1
+a9174503-45a8-5e80-a3c4-23739cb05426,GitHub MCP Server,1
+a9efe3e7-6316-58d9-a088-0e28ef1bd0ce,SQLite,1
+aa2b1f45-25d4-5cc2-9473-3fd47d47ddef,Task Manager MCP Server,1
+aab975ab-a6bd-5f35-8646-bf5aa2b7ca83,mcp-taskade,1
+ab62d727-b275-5ff7-aa5d-a59ddc994a4f,tonic-ui,1
+ab7ebdb7-8fa7-50ff-b076-e19603b7ae85,Leeroopedia,1
+abed65fb-1fed-5fc9-b6ea-0aeccb1b6b19,pika,1
+ac0fc13c-1249-5612-aacb-2340662402a3,AMem,1
+acc638e6-9a7f-56c1-b154-815eb76a3866,cds,1
+ae222e0c-242b-578b-9d69-91ffa0183f0a,marketdata-mcp-server,1
+ae6c3a99-875e-5ed3-95c9-22936e810204,vector-os-nano,1
+aefeca65-2f7e-5515-a52a-d2eac7638d6e,PubMed MCP MCP Server,1
+af45b7cd-4839-5726-bdf8-48e981e1f749,MCP Package Docs Server,1
+b07d6252-b8da-5b67-9574-9a7dc49aa76d,simctl-mcp,1
+b0ea98ba-ef14-520a-a260-232496cad169,nREPL MCP Server,1
+b1546cfc-e8d4-579f-acbf-24c8b315efa2,CLIO ADIOS,1
+b15b5279-78c8-51d9-8d13-4a52914a6ebb,Peekaboo MCP,1
+b21cecd1-e24d-57b7-ba09-4e5be58f2324,mcp-text-editor,1
+b23af877-bf5f-5dd5-9735-54f7ce387716,pexels-mcp-server,1
+b28259c1-b5d0-5868-ace5-ed64ef01cb7b,MATRIX,1
+b38dbf25-29cd-51a3-82ec-11d4e4976c4f,MCP Appium - Mobile Development and Automation Server,1
+b3fe2a17-61c2-5677-808c-a27954b55ebd,cve-mcp,1
+b44e7fc7-68af-5dd2-a736-0f6586de5acf,deduce,1
+b44ee41f-e7cc-5eb4-a028-dbe9ba5b9018,checkmate,1
+b477aae0-53a3-5112-9f41-08eefde7e1b6,io.github.ruvnet/claude-flow,1
+b568ba57-35a8-58a9-9cb8-3abce6ab1341,pair-review,1
+b59bcfbe-e49f-5f2e-85ba-2e6b47b12d1a,chronicle-mcp,1
+b5d5b2ae-f60d-5f69-82d5-d905535275b9,gaviwhatsapp-mcp,1
+b611cac3-af03-5e51-b9dc-51c049f15e56,bknd,1
+b61a888b-7703-5496-bae6-e819c590de1b,filesystem-mcp,1
+b69d4bb9-275f-57ec-9c0d-7efd3a006b11,Astra DB MCP Server,1
+b78de5b2-9cf8-5050-887d-8b1e8e239fe0,OpenSpace,1
+b7d8033b-8c00-565e-9364-be9e5610ec46,Unity,1
+b83d5105-af4b-5ee0-a843-9f1cdcccb793,𓂀𓁢𓋹𝔸ℕ𝕌𝔹𝕀𝕊𓋹𓁢𓂀 - Intelligent Guidance for,1
+b8c4d340-cf0a-533f-babf-e17585212fbe,esa MCP Server,1
+b96a480e-0f1b-5d7e-83fc-0e32d6b22bdd,mcp-jina-ai,1
+b9d4fccb-fbc2-55a6-9796-584e45e3797e,MCP4GVA,1
+b9ed81f1-97e4-5af0-9e72-5e6be0fa900b,@automattic/mcp-context-a8c,1
+ba630675-2fe4-520b-b013-992e30b135be,@zengwenliang/mcp-server-sequential-thinking,1
+ba7b9ef7-232c-5e0d-b0ac-ce7113cc9948,MCP Time Server,1
+bafbcb53-6e75-55a0-bbae-c942b1001bae,colab-mcp,1
+bb003539-6924-56ad-aa3e-68eee20ceb09,SocratiCode,1
+bb48c410-48e2-51cd-a956-b9b1280b0953,Figma MCP Server,1
+bb9869a9-d073-54f9-89c5-72c3fdd9d3bb,Designare Knowledge Base,1
+bba9fcf2-cec1-502b-b78b-c5644f99dd04,Nexus Core,1
+bc95be5a-8b79-5423-be20-63e2d89b1e50,notebook,1
+bccfc0a8-b173-553d-8346-76de632b7898,Paper Lantern,1
+bd6ae788-b8f2-5868-b820-721ca8b876e1,fallow,1
+bd88a08b-05b9-59aa-b2ad-6b1b17f13c23,alumnium,1
+be662269-f70a-5384-b9c5-69861ade4327,mcp-alphafold,1
+be9d8bfc-1493-5034-aef7-aeb31a9cb11c,PubChem,1
+bf30225a-c526-58f0-8255-b1862a8fa74f,AiDesigner,1
+bf3410f4-5799-56e4-9dcf-4c9d773d9240,@pipeworx/mcp-semrush,1
+c029b655-cbc9-524f-bc1a-231219e13526,Native DevTools,1
+c11e2ce9-532b-5349-a232-43df0ff98451,KRS Poland,1
+c154a43d-3f60-5f58-b7e6-be46eb9be6ac,Yandex Direct,1
+c1762b82-64e3-5350-ab61-5b6c31061a30,@taiyokimura/nextjs-docs-mcp,1
+c27604f8-c420-5b86-a8f6-cdff0f02a4b0,Trivy,1
+c446b3f7-df4a-5dc4-ba8f-08a5ab124599,Google Stitch,1
+c47fe8b3-5006-5f75-bf89-55d4c4ca149d,FastMCP Demo,1
+c5304105-9a09-543a-af51-d4d91b792668,devops_os,1
+c53ee9d5-d029-5b9f-8b1d-0807bd68e825,Vitest MCP Server,1
+c61bcaf8-a3e6-5602-9293-6f1b792b4e20,Document Generator,1
+c6dc501e-341f-5f9c-aa0e-98e398f46fd7,Tushare,1
+c715b8a8-3457-5ba3-8663-9562a15ae774,Foundry,1
+c7c2b350-bac7-5a93-a896-f1c51965d969,marketplace-mcp,1
+c874a904-eee1-575d-a20b-556a4e6db962,Shell MCP Server,1
+c8ea78d4-abdb-5780-b7e2-bce69f62fc2d,agentic-memory-mcp,1
+c955f893-b10e-5ea3-a490-b9798c470514,md-anything,1
+c9ee539a-ac12-5479-ab1b-4d5d42c35e72,mcp-youtube-transcript,1
+cac3b16d-bec4-5f16-9982-50157314ceff,nteract/semiotic,1
+cae9474f-533c-54b1-babb-4b6cf81f6575,rubydex,1
+cb348aec-4107-545a-bab2-79524a378d72,Apple Maps Search,1
+cba6f4f8-ccc0-50b5-bc0f-2f68347ab8b1,minimax-coding-plan-mcp,1
+cbfa7a38-85e8-5cec-a440-e8e5e332497a,MCP LLMS-TXT Documentation Server,1
+cc60b521-5992-512c-a175-61046eeaec5c,mempal,1
+cca814ab-116c-5b78-a233-6b04dd1b06de,Chroma MCP Server,1
+cd050ca2-a5f6-5224-a663-f426167504c4,context-creator,1
+cd73ba14-9c47-57e0-89f9-d584bd29a572,MotherDuck,1
+cdd106a6-4fe5-56e5-8684-ceec507a5e84,@felores/kie-ai-mcp-server,1
+ce288fe1-35bf-58b8-bd90-acbe48088fd1,Polymarket by Quantish,1
+ce623aa4-b690-50a8-b2e0-437c7aa32488,io.github.lazymac2x/blog,1
+cf8d34cc-7589-529c-800c-6c37eaade3ee,Jina AI,1
+cfc7da2b-d318-54b7-a2d7-16d4e71ada04,zen-mcp,1
+d14b381f-75fb-503a-9932-68a769e47fe0,xcode-mcp-server (drewster99),1
+d179ba30-24ff-5910-b737-b639f4df25f3,mcp-discord,1
+d2d401cd-cf5c-5f0c-8d90-add4cde89ba0,Orchestrator MCP,1
+d2e49691-ef54-57d2-b6fd-43266203e267,idea-reality-mcp,1
+d315e1a0-6bd9-5bdf-b229-605888623616,MCP Server for eSignatures,1
+d31c455c-a224-5c57-988c-c4d05098c881,OpenGrok,1
+d3300dda-fa04-5f44-ab24-245900b89e23,@vtex/developer-mcp,1
+d369b491-d463-54ae-b4b4-082563579bec,auth0-mcp-server,1
+d3e9c269-5c4c-5622-a9ee-45609cfbd31f,PowerPoint MCP Server,1
+d40124ac-1263-5e0d-ac81-663686d2d26d,ILSpy,1
+d44b7677-0d2e-5b2f-92a3-f315b0b2028e,mongodb-mcp-server,1
+d546a719-f074-5051-8c06-5fe40fba65c6,genai-toolbox,1
+d66eb263-483c-582a-89d4-ffb82e5ae32d,MCP Hub Server,1
+d6925eda-99b4-5280-a9d5-bbcc580ce221,IBM ODM Decision MCP Server,1
+d71f4206-55c3-55b6-8619-d3292654d5eb,Trilium,1
+d7257fac-050e-50e9-afe1-3db6fd4b1ee3,mcp-github,1
+d75befe8-8842-5722-ad9f-92ac2d69e089,Carbon MCP,1
+d781b8c2-f632-5b5b-8395-f4e24093252a,MCP Server Chart,1
+d81e6922-99e3-55b1-8789-68d962fcf016,Android MCP,1
+d8d38f85-6e15-55c1-bbd5-946fbaad60b5,ack-mcp-server,1
+d8e3bcb4-872c-5d1f-b14b-c236000721b0,Uno Platform,1
+d933a9e3-b351-5985-b223-78a8df35a030,SafeAgent,1
+d983a26f-d764-5041-92b8-99c31a616f0c,mcp,1
+d997159f-f0ac-5a86-a5e5-21d8773d0039,tempo-mcp,1
+d9b7bc7a-f1d9-5b44-a3b1-d9826e655419,Web Tools (rog0x),1
+d9e1cdfc-8602-542e-9120-98b49becfd4a,KiCad,1
+daa9e566-bc10-56c2-85ae-ff05a8d3c5d2,Anki,1
+dabcb65b-681d-5998-a014-d22443c2695d,elena,1
+dac2c07c-e519-571d-b61c-4fd565686a5b,AlgoKiller,1
+daf074e3-e33c-5dd0-8b21-0c6f46034ced,Apple Mail MCP Server,1
+db0138b2-4494-5716-8117-391f5a321ced,goalie,1
+dbbd397a-6c68-5816-bd47-f41ca2c90137,chrome-devtools-mcp-for-extension,1
+dc346423-7534-57ef-a842-716a5bd1372d,maz-ui,1
+dc871d54-49c1-5cc7-af1a-6287bde78cb5,bunqueue,1
+dcde9163-123c-595d-a075-895d907a29d9,dunetrace-mcp,1
+df0b30c4-ad6f-5a0e-a5e1-60021995b8a6,envmcp,1
+df6ecff1-a6e2-5f3a-a008-985607467014,IBM i MCP Server,1
+e06bb478-ccbb-5b64-bd08-474f8d1b455a,OpenAPI,1
+e0801713-324d-57f6-bd9d-d8babe49c222,@benborla29/mcp-server-mysql,1
+e0fe57ab-1f41-572b-a878-ae56a3ce273d,OneSignal,1
+e14017cf-1bed-5bf0-b707-06a894f23196,PDF Reader MCP Server,1
+e24ceb9f-1bf9-5b31-b544-8cb96f166467,awslabs.amazon-bedrock-agentcore-mcp-server,1
+e2c0e01b-4746-5260-9fb8-a65e81349428,waveform-MCP,1
+e2fa8e26-a8fa-5c96-a863-ac4ccddda518,trend-pulse,1
+e2fc0b66-5ac1-560c-81a5-93dae95ce70b,io.github.cybeleri/finance,1
+e31b9cce-4a30-5067-8034-794ff519b15b,homebrew-mcp,1
+e3ab8e2d-349b-564a-9e25-2d5e4c9f40a9,codesight,1
+e3c6ca46-f9f3-5f60-8ff3-7316792032f3,pgEdge Postgres MCP Server,1
+e41d1bb1-29e5-5859-95a0-4df8782d4fac,clipcannon,1
+e465d4ab-5838-5531-ad3b-07d547a0dcdc,hetzner-mcp-server,1
+e470575c-2d5e-5879-9f23-5c4ec1f203ae,ProofFlow,1
+e4bf6247-d043-5ac2-bf97-ce54ccdbe7f8,@mintlify/mcp,1
+e52d6279-d339-5f1e-b0e1-1d29bef28c03,loki-mode,1
+e5d655ab-a847-55fc-8910-33bdea48e550,kordoc,1
+e5f072d7-80af-51dc-a033-c82f86248493,ClickUp MCP Sedrver,1
+e649bea8-50d3-593b-bc48-f323f6608001,xylocopa,1
+e6664484-30b3-51d1-aa31-93d6079e2d66,firecrawl-mcp,1
+e671f827-c716-50b4-ae12-bde8c3d7a153,mcp-graphql,1
+e672647b-f25c-5bbb-94b0-599a092fd34a,agentic_commerce,1
+e6b0399f-1434-5019-8aef-523850d4ce98,awslabs.mysql-mcp-server,1
+e763ce3e-16a2-543f-b0f3-b4c3450d315a,mcp-github,1
+e794d549-7666-5237-a97c-4a4976215cd8,@robinson_ai_systems/vercel-mcp,1
+e7b431bf-4b60-58c0-952c-2f23293db796,Kilntainers,1
+e7c090de-ccc4-5832-892b-9eb5d6dcf8c8,Smart Code Reviewer,1
+e7c8a31e-49c8-5294-a4c9-e94f2f67d288,drift,1
+e8d3d66b-fd9b-5500-87e5-406aabe4815c,session-orchestrator,1
+eac63cd9-87f7-5066-8b50-4095e615348c,Link,1
+eb2ca27e-5571-5dd7-ba46-bfb2016a66f2,mcp-jira,1
+ec450b07-7355-5f8f-81f6-d4ceb8a97f87,Cursor Conversations,1
+ecd43f31-12e7-5483-a618-35d9061b4044,net.todoist/mcp,1
+ed6d3ca9-88bd-5d0d-88e8-b6d3cb271b8a,Better Stack,1
+ef7628c1-04e9-5bbc-8ab4-def7d48b8073,hugeicons-mcp,1
+efc7bf89-e21f-5e05-9525-6300ff7d7c5f,Context Mode,1
+f002c5d6-cd02-595a-8dc6-14335ded2853,open-code-review,1
+f0e65528-56f5-5585-baac-6eb9cb29347d,iac-mcp,1
+f0ecbbba-e569-5e59-8b95-5f6c2565da91,Planer MCP Server,1
+f10445de-d021-50e1-8d23-ed15febe1f80,Personal Expense Tracker,1
+f151b3eb-f617-57da-82be-933baecc1f2f,llamacloud-mcp,1
+f181ab2b-e398-5f83-a3fa-8015340b8558,BikeScout,1
+f1bcdcfe-cd62-541d-953a-0b8bde22dc94,@botanicastudios/crossref-mcp,1
+f21788d1-407e-58dc-a882-017266d74761,elasticsearch-mcp,1
+f2651fcb-1a2d-58bd-bd0a-42883330bf21,Docusign,1
+f36b9da6-246e-5940-95b6-1cae8d130d9b,Obsidian MCP Server,1
+f36e754f-020d-52b3-92f7-b629b8a2f535,SSH,1
+f3850ac7-fb4a-523e-be15-bd10992090b0,midnight-mcp,1
+f4c7250c-dfc0-55ca-b724-d5e5a5f7d4ae,TypeScript MCP,1
+f4d74d64-1b70-546d-bcc3-98ead71fa9bc,topgun,1
+f5173b76-db16-5a27-bb6c-0e8105e07504,svelte-llm,1
+f5ebcdff-b0e0-5351-87c9-58701eec9434,mcp-gopls,1
+f632ce54-c598-573a-8ce6-579997338b93,crucible-mcp,1
+f7864ff4-c993-52a1-b258-3606b759f3de,vayu-ui,1
+f7976418-8503-5be9-87da-e8253e3f17da,Octocode,1
+f7e8d07e-0a5e-55f3-b328-59b31498b17e,leave-management,1
+f8323900-73c5-5c49-bad7-e749804e9a9a,mache,1
+f832424d-54e4-562a-ad65-1485ff9543e0,IBM Storage Insights MCP Server,1
+f87e0711-bb82-52d2-94fb-252c87342409,make-mcp-server,1
+f90ed753-afc8-5da6-84f0-b90e49565f76,convex,1
+f919a113-4f82-5147-ae66-4307eb53cd22,bitbucket-mcp,1
+f91cdcd5-67d5-536b-8f2c-19c12c9ae675,@nic0xflamel/defillama-mcp-server,1
+f92b0875-cef0-5f41-9d74-9188b735f114,endgame-mcp,1
+f958fa9a-11cd-59a2-b998-a62366bbac02,nocodb,1
+f9afd0eb-19b4-53ca-88ee-0df202b38d6d,actionbook,1
+f9d96cfa-3853-5a22-9d4f-d4144d965743,Dynamo MCP,1
+f9ef5606-bc32-5a39-9853-bbbbb7ebb6d6,GitHub Projects,1
+fa918395-4477-5f94-bab1-13cdadbe9949,Kaitoi Studio,1
+faa27586-ecb2-58c1-afff-d4d9ce113888,Helius MCP,1
+fb044e5e-12fe-56c3-89da-af773255f0af,Notion MCP Server,1
+fb0c2787-555e-58bd-80bc-b5f4bd83e90c,com.make/mcp-server,1
+fb3abc9f-e958-5e0c-8607-44814fe69c7c,Codex CLI,1
+fccbf79a-b3a8-509c-b980-8ddf00d68257,ast-grep,1
+fe216dac-db84-53b3-9b46-f396c5aa2a90,ng-forge,1
+fe385fc6-226c-5ee4-89b1-f368f1c17367,TokenGuard,1
+fe3962ee-0139-5aff-8aa9-44a01123c55b,SpecCodingMcpServer,1
+feae448d-bf6b-563d-8f02-e3c3dab2f331,mem0-mcp-server,1
+fee945ee-cf37-5ce1-a360-784076d12506,@openbnb/mcp-server-airbnb,1
+ff860914-8241-5be4-9148-4a1391cf80b0,Runbook AI MCP Server,1

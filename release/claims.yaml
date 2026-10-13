@@ -1,0 +1,144 @@
+# Inventory numbers of the MCP-Eco paper and the command that regenerates each.
+# Units are stored table rows from Parquet footers, not validated MCP entities.
+# The dataset identity is pinned in release/source.json.
+#
+# Commands run from the repository root and read <repository>/data by default.
+# scripts/check_claims.py first verifies the complete release with
+# `python scripts/verify_release.py --check`, then runs every command below.
+#
+# The manuscript is not distributed in this repository. `where` names the part
+# of the manuscript that states each number.
+paper: "MCP-Eco: Mining Both Sides of the Model Context Protocol (MCP) Ecosystem"
+claims:
+- id: table_count
+  value: 19
+  text: '19'
+  where: Frozen release inventory
+  unit: exported table
+  cmd: python scripts/verify_release.py --emit table_count
+- id: total_rows
+  value: 16880899
+  text: 16{,}880{,}899
+  where: Frozen release inventory
+  unit: stored table row
+  cmd: python scripts/verify_release.py --emit total_rows
+- id: rows.mcp_registries
+  value: 7
+  text: '7'
+  where: Frozen release inventory
+  unit: stored row in mcp_registries
+  cmd: python scripts/verify_release.py --emit rows.mcp_registries
+- id: rows.mcp_servers
+  value: 78302
+  text: 78{,}302
+  where: Frozen release inventory
+  unit: stored row in mcp_servers
+  cmd: python scripts/verify_release.py --emit rows.mcp_servers
+- id: rows.server_registry_listings
+  value: 65233
+  text: 65{,}233
+  where: Frozen release inventory
+  unit: stored row in server_registry_listings
+  cmd: python scripts/verify_release.py --emit rows.server_registry_listings
+- id: rows.mcp_server_transports
+  value: 45272
+  text: 45{,}272
+  where: Frozen release inventory
+  unit: stored row in mcp_server_transports
+  cmd: python scripts/verify_release.py --emit rows.mcp_server_transports
+- id: rows.mcp_tools
+  value: 284845
+  text: 284{,}845
+  where: Frozen release inventory
+  unit: stored row in mcp_tools
+  cmd: python scripts/verify_release.py --emit rows.mcp_tools
+- id: rows.mcp_resources
+  value: 20795
+  text: 20{,}795
+  where: Frozen release inventory
+  unit: stored row in mcp_resources
+  cmd: python scripts/verify_release.py --emit rows.mcp_resources
+- id: rows.mcp_prompts
+  value: 8983
+  text: 8{,}983
+  where: Frozen release inventory
+  unit: stored row in mcp_prompts
+  cmd: python scripts/verify_release.py --emit rows.mcp_prompts
+- id: rows.server_dependencies
+  value: 662693
+  text: 662{,}693
+  where: Frozen release inventory
+  unit: stored row in server_dependencies
+  cmd: python scripts/verify_release.py --emit rows.server_dependencies
+- id: rows.consumer_repos
+  value: 16165
+  text: 16{,}165
+  where: Frozen release inventory
+  unit: stored row in consumer_repos
+  cmd: python scripts/verify_release.py --emit rows.consumer_repos
+- id: rows.repo_discovery_signals
+  value: 45529
+  text: 45{,}529
+  where: Frozen release inventory
+  unit: stored row in repo_discovery_signals
+  cmd: python scripts/verify_release.py --emit rows.repo_discovery_signals
+- id: rows.repo_server_usage
+  value: 9200
+  text: 9{,}200
+  where: Frozen release inventory
+  unit: stored row in repo_server_usage
+  cmd: python scripts/verify_release.py --emit rows.repo_server_usage
+- id: rows.commits
+  value: 9336613
+  text: 9{,}336{,}613
+  where: Frozen release inventory
+  unit: stored row in commits
+  cmd: python scripts/verify_release.py --emit rows.commits
+- id: rows.server_pull_requests
+  value: 1610439
+  text: 1{,}610{,}439
+  where: Frozen release inventory
+  unit: stored row in server_pull_requests
+  cmd: python scripts/verify_release.py --emit rows.server_pull_requests
+- id: rows.client_pull_requests
+  value: 121161
+  text: 121{,}161
+  where: Frozen release inventory
+  unit: stored row in client_pull_requests
+  cmd: python scripts/verify_release.py --emit rows.client_pull_requests
+- id: rows.pr_reviews
+  value: 620151
+  text: 620{,}151
+  where: Frozen release inventory
+  unit: stored row in pr_reviews
+  cmd: python scripts/verify_release.py --emit rows.pr_reviews
+- id: rows.pr_review_comments
+  value: 300883
+  text: 300{,}883
+  where: Frozen release inventory
+  unit: stored row in pr_review_comments
+  cmd: python scripts/verify_release.py --emit rows.pr_review_comments
+- id: rows.pr_commit_bridge
+  value: 597344
+  text: 597{,}344
+  where: Frozen release inventory
+  unit: stored row in pr_commit_bridge
+  cmd: python scripts/verify_release.py --emit rows.pr_commit_bridge
+- id: rows.ecosystem_issues
+  value: 991441
+  text: 991{,}441
+  where: Frozen release inventory
+  unit: stored row in ecosystem_issues
+  cmd: python scripts/verify_release.py --emit rows.ecosystem_issues
+- id: rows.issue_comments
+  value: 2065843
+  text: 2{,}065{,}843
+  where: Frozen release inventory
+  unit: stored row in issue_comments
+  cmd: python scripts/verify_release.py --emit rows.issue_comments
+- id: export_date
+  value: 20260623
+  text: '2026-06-23'
+  where: Collection and curation
+  unit: UTC export-start date, encoded YYYYMMDD
+  cmd: python scripts/verify_release.py --emit export_date

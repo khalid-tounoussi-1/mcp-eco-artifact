@@ -1,0 +1,27 @@
+{
+  "collected_at_utc": "2026-06-23T10:26:53+00:00",
+  "scrub_pii": false,
+  "table_row_counts": {
+    "mcp_registries": 7,
+    "mcp_servers": 78302,
+    "server_registry_listings": 65233,
+    "mcp_server_transports": 45272,
+    "mcp_tools": 284845,
+    "mcp_resources": 20795,
+    "mcp_prompts": 8983,
+    "server_dependencies": 662693,
+    "consumer_repos": 16165,
+    "repo_discovery_signals": 45529,
+    "repo_server_usage": 9200,
+    "commits": 9336613,
+    "server_pull_requests": 1610439,
+    "client_pull_requests": 121161,
+    "pr_reviews": 620151,
+    "pr_review_comments": 300883,
+    "pr_commit_bridge": 597344,
+    "ecosystem_issues": 991441,
+    "issue_comments": 2065843
+  },
+  "total_rows": 16880899,
+  "crawler_version": "0.1.0"
+}

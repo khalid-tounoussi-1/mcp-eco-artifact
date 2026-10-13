@@ -1,0 +1,20 @@
+[project]
+name = "mcp-eco-artifact"
+version = "0.1.0.dev0"
+description = "Companion code for the MCP-Eco dataset: download, verify and query the pinned release."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5",
+    "huggingface_hub>=1.0",
+    "jsonschema>=4.20",
+    "pyarrow>=18",
+    "PyYAML>=6",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["scripts", "tests"]
+testpaths = ["tests"]

@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: >-
+  This file describes the MCP-Eco companion code. To cite MCP-Eco, please cite
+  the paper given as the preferred citation and name the dataset revision you
+  used.
+type: software
+title: MCP-Eco companion code
+abstract: >-
+  Scripts and queries that download, verify, and query the pinned MCP-Eco
+  dataset release, and that rerun the paper's code listing and worked examples.
+authors:
+  - family-names: Tounoussi
+    given-names: Khalid
+    affiliation: ÉTS Montréal, University of Quebec
+  - family-names: Sayagh
+    given-names: Mohammed
+    affiliation: ÉTS Montréal, University of Quebec
+  - family-names: Ouni
+    given-names: Ali
+    affiliation: ÉTS Montréal, University of Quebec
+  - family-names: Kashiwa
+    given-names: Yutaro
+    affiliation: Nara Institute of Science and Technology (NAIST)
+keywords:
+  - Model Context Protocol
+  - MCP
+  - mining software repositories
+  - dataset
+preferred-citation:
+  type: unpublished
+  title: "MCP-Eco: Mining Both Sides of the Model Context Protocol (MCP) Ecosystem"
+  authors:
+    - family-names: Tounoussi
+      given-names: Khalid
+      affiliation: ÉTS Montréal, University of Quebec
+    - family-names: Sayagh
+      given-names: Mohammed
+      affiliation: ÉTS Montréal, University of Quebec
+    - family-names: Ouni
+      given-names: Ali
+      affiliation: ÉTS Montréal, University of Quebec
+    - family-names: Kashiwa
+      given-names: Yutaro
+      affiliation: Nara Institute of Science and Technology (NAIST)
+  year: 2026
+  notes: >-
+    Unpublished manuscript prepared for the ICSE 2027 Tool Demonstration and
+    Data Showcase Track.
+references:
+  - type: data
+    title: MCP Ecosystem Dataset (MCP-Eco)
+    authors:
+      - family-names: Tounoussi
+        given-names: Khalid
+      - family-names: Sayagh
+        given-names: Mohammed
+      - family-names: Ouni
+        given-names: Ali
+      - family-names: Kashiwa
+        given-names: Yutaro
+    repository: https://huggingface.co/datasets/mcp-research-alliance/mcp-ecosystem
+    url: https://huggingface.co/datasets/mcp-research-alliance/mcp-ecosystem
+    commit: c8edfd4bdf51b15ea95d6b0ede5dec97945f398a
+    license: CC-BY-4.0
+    year: 2026
+    notes: Frozen data revision used by the paper and by this code.

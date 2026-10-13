@@ -1,0 +1,32 @@
+{
+  "verified_at_utc": "2026-10-13T18:56:06.780330+00:00",
+  "consumer": {
+    "repository_url": "https://github.com/mikekelly/gap",
+    "commit": "0e83784f1f47ab0098c2ed8595ada46852a1f89b",
+    "file_url": "https://github.com/mikekelly/gap/blob/0e83784f1f47ab0098c2ed8595ada46852a1f89b/.mcp.json",
+    "blob_sha": "34ade5822fe59eed31d8572f8eb60099229c70a8",
+    "file_sha256": "e25586e38782aeaf6fe82d32cc0c3a3e68a56ad4bd310e4fb792b8637485b94b",
+    "exa_command": "npx",
+    "exa_package_argument_present": true
+  },
+  "pull_request": {
+    "html_url": "https://github.com/exa-labs/exa-mcp-server/pull/237",
+    "pull_id": 3440544009,
+    "issue_id": 4129324178,
+    "title": "[exa-mcp-server]: Remove deprecated livecrawl from tool schemas, use maxAgeHours",
+    "merged_at": "2026-03-24T18:46:15Z",
+    "merge_commit_sha": "0ad394f34d3b70bb06d47a90d57d4c49019b9efa"
+  },
+  "reviews": [
+    {
+      "id": 4000809969,
+      "state": "COMMENTED",
+      "html_url": "https://github.com/exa-labs/exa-mcp-server/pull/237#pullrequestreview-4000809969"
+    },
+    {
+      "id": 4001477448,
+      "state": "APPROVED",
+      "html_url": "https://github.com/exa-labs/exa-mcp-server/pull/237#pullrequestreview-4001477448"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+name: release-check
+
+# Manual only. Downloads the complete pinned release from Hugging Face:
+# 19 Parquet files, 5,309,329,895 bytes (about 5.31 GB). Then runs every
+# example, verifies all file hashes and footer counts, and regenerates the
+# numbers in release/claims.yaml.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  frozen-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.lock
+      - run: python scripts/download_data.py --group listing --data-dir data
+      - run: python scripts/paper_listing.py --data-dir data --output outputs/listing.csv
+      - run: python scripts/download_data.py --group engineer --data-dir data
+      - run: python scripts/engineer_example.py --data-dir data --output outputs/engineer.json
+      - run: python scripts/download_data.py --group researcher --data-dir data
+      - run: python scripts/researcher_example.py --data-dir data --output outputs/researcher.json
+      - run: python scripts/download_data.py --group all --data-dir data
+      - run: python scripts/verify_release.py --data-dir data --check
+      - run: python scripts/check_claims.py --data-dir data

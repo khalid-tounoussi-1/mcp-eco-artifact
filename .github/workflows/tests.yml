@@ -1,0 +1,23 @@
+name: tests
+
+# Fast unit tests on SYNTHETIC records. No credentials and no dataset download.
+# A pass here says nothing about the frozen release. See release-check.yml.
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements-test.lock
+      - run: python -m pytest -q
+      - name: Release evidence hashes
+        run: python scripts/download_data.py --list

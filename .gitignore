@@ -1,0 +1,15 @@
+# Downloaded release files and generated outputs
+data/
+outputs/
+*.parquet
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editors and systems
+.DS_Store
+.idea/
+.vscode/

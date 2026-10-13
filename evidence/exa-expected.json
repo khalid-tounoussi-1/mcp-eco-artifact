@@ -1,0 +1,45 @@
+{
+  "description": "Expected frozen records for the Exa case in the paper. The case was selected deliberately from tools matching web-search names and then checked individually. It is not a sample and supports no population estimate.",
+  "release_revision": "c8edfd4bdf51b15ea95d6b0ede5dec97945f398a",
+  "engineer": {
+    "tool": {
+      "tool_id": "cfdea736-d11e-40c7-8fe8-deb4237efff5",
+      "tool_name": "web_search_exa",
+      "source": "glama",
+      "server_id": "d5b1780a-4114-508c-85a7-2ee7027add69",
+      "server_url": "https://github.com/exa-labs/exa-mcp-server",
+      "consumer_url": "https://github.com/mikekelly/gap"
+    },
+    "input_json_schema_sha256": "80ed2f0ceff5d499a666d78053e6731d9e62512386ea4f1c660ffeacc8bdb9d1",
+    "stored_schema_required": ["query"],
+    "stored_schema_fields": ["contextMaxCharacters", "livecrawl", "numResults", "query", "type"],
+    "schema_examples": {
+      "valid": [{"query": "MCP documentation"}],
+      "invalid": [{"numResults": 5}, {"query": 5}]
+    },
+    "setup": {
+      "usage_id": "145dc93f-dd70-4fed-a6cf-29721e166c50",
+      "config_file_path": ".mcp.json",
+      "raw_command": "npx",
+      "raw_args": "[\"-y\", \"exa-mcp-server\"]",
+      "match_method": "v1"
+    },
+    "package_identifier": "exa-mcp-server"
+  },
+  "researcher": {
+    "server_url": "https://github.com/exa-labs/exa-mcp-server",
+    "consumer_url": "https://github.com/mikekelly/gap",
+    "mentions": ["web_search_exa", "livecrawl"],
+    "pull_request": {
+      "pr_id": 4129324178,
+      "server_id": "d5b1780a-4114-508c-85a7-2ee7027add69",
+      "pr_url": "https://github.com/exa-labs/exa-mcp-server/pull/237",
+      "title": "[exa-mcp-server]: Remove deprecated livecrawl from tool schemas, use maxAgeHours",
+      "merged_at": "2026-03-24 18:46:15"
+    },
+    "reviews": [
+      {"review_id": 4000809969, "review_state": "COMMENTED"},
+      {"review_id": 4001477448, "review_state": "APPROVED"}
+    ]
+  }
+}
