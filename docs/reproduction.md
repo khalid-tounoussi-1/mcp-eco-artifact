@@ -90,8 +90,14 @@ to a closed local port, so any network request would have failed.
 
 ### Not tested
 
-Linux, Windows, and the two GitHub Actions workflows. No remote repository
-exists yet.
+At the time of this local run, Linux, Windows, and the GitHub Actions
+workflows had not been tested.
+
+Publication check on 2026-10-14: the [public repository](https://github.com/khalid-tounoussi-1/mcp-eco-artifact)
+and [v0.1.0 tag](https://github.com/khalid-tounoussi-1/mcp-eco-artifact/tree/v0.1.0)
+are available. The [unit-test workflow on Ubuntu](https://github.com/khalid-tounoussi-1/mcp-eco-artifact/actions/runs/38488163490)
+passed for commit `f6b426a`. This does not establish a full dataset reproduction
+on Linux. Windows and the manual full-release workflow remain unverified here.
 
 ## Review gates
 
