@@ -5,6 +5,10 @@ message: >-
   used.
 type: software
 title: MCP-Eco companion code
+version: 0.1.0
+date-released: 2026-10-13
+license: MIT
+repository-code: https://github.com/khalid-tounoussi-1/mcp-eco-artifact
 abstract: >-
   Scripts and queries that download, verify, and query the pinned MCP-Eco
   dataset release, and that rerun the paper's code listing and worked examples.

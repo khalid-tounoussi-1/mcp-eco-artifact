@@ -188,10 +188,9 @@ the preferred citation.
 
 ## Licenses
 
+- **Code and documentation.** MIT. See [LICENSE](LICENSE).
 - **Dataset.** CC BY 4.0. Third-party content in the data keeps its own terms.
   See [DATA-LICENSE.md](DATA-LICENSE.md).
 - **Release evidence.** `release/`, `docs/schema.png`, and the expected records
-  in `evidence/` are copied or derived from the dataset release and fall under
-  its license.
-- **Code.** A license for the code has not been chosen yet. Until a `LICENSE`
-  file is added, no license is granted for the code.
+  in `evidence/` are copied or derived from the dataset release. They fall
+  under the dataset license, not under MIT.

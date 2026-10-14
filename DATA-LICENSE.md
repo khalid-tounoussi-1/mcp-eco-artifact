@@ -42,5 +42,5 @@ dataset license:
 public GitHub pages. It holds identifiers, hashes, titles, and review states,
 not the inspected files.
 
-The code in this repository is not covered by this file. See the Licenses
-section of [README.md](README.md).
+The code and documentation written for this repository are under the MIT
+license in [LICENSE](LICENSE).

@@ -1,6 +1,7 @@
 [project]
 name = "mcp-eco-artifact"
-version = "0.1.0.dev0"
+version = "0.1.0"
+license = "MIT"
 description = "Companion code for the MCP-Eco dataset: download, verify and query the pinned release."
 readme = "README.md"
 requires-python = ">=3.12"
