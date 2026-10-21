@@ -1,22 +1,33 @@
 # MCP-Eco
 
-Find MCP tools, inspect the inputs they accept, and see how other projects
-connect to their servers. You can also follow a server to its pull requests
-and reviews.
+MCP-Eco is a dataset for studying the software behind the Model Context Protocol
+(MCP). It links candidate server projects, repositories that declare them,
+tool interfaces, and development records.
 
-These Python scripts query the [MCP-Eco dataset on Hugging Face](https://huggingface.co/datasets/mcp-research-alliance/mcp-ecosystem).
-They download the data you need and run locally. You do not need a database,
-Docker, or API keys.
+This repository provides scripts to download verified data, query it locally,
+and reproduce the paper's examples.
 
-## Start here: find a tool and a setup example
+[Dataset](https://huggingface.co/datasets/mcp-research-alliance/mcp-ecosystem)
+· [Schema and tables](docs/data-dictionary.md)
+· [Examples](docs/examples.md)
+· [Reproduction](docs/reproduction.md)
 
-Suppose you want to add web search to a coding assistant. This example finds
-matching tools, shows their required inputs, and points you to a project that
-names the server in a setup file.
+## What's in the dataset?
 
-You need **Git and Python 3.12**. The example downloads about **83 MB** of data.
+| Area | Records |
+| --- | --- |
+| Server projects | Candidate repositories, registry listings, transports, dependencies |
+| Interfaces | Tools and input schemas, resources, prompt templates |
+| Consuming projects | Candidate repositories, discovery signals, configuration declarations |
+| Development | Associated pull requests, reviews, issues, commits |
 
-### 1. Get the code and install dependencies
+The data are released as Parquet tables with a SQL schema and collection metadata.
+Use them to find tool interfaces, inspect configuration examples, or connect
+interfaces to maintenance discussions.
+
+## Quick start
+
+Requires **Git and Python 3.12**. No API keys or database server are needed.
 
 ```sh
 git clone https://github.com/khalid-tounoussi-1/mcp-eco-artifact.git
@@ -26,165 +37,96 @@ source .venv/bin/activate
 python -m pip install -r requirements.lock
 ```
 
-On Windows PowerShell, create the environment with `py -3.12 -m venv .venv`
-and activate it with `.venv\Scripts\Activate.ps1`.
+On Windows PowerShell, use `py -3.12 -m venv .venv` and
+`.venv\Scripts\Activate.ps1`.
 
-### 2. Download the data and search
+Download the engineer subset and find tools for web search:
 
 ```sh
 python scripts/download_data.py --group engineer --data-dir data
 python scripts/engineer_example.py --data-dir data --term "web search" --output outputs/engineer.json
 ```
 
-Results appear in the terminal and in `outputs/engineer.json`. They include
-required inputs, the server repository, and an example project setup path.
+Results include tool inputs, server repositories, and linked configuration
+examples. The search covers tools with linked projects and also checks the
+paper's fixed Exa example. It reads stored records without running MCP servers.
 
-### 3. Read the result
+### Choose a download
 
-After the search results, the script checks the Exa example used in the paper.
-This is an excerpt of that output:
+| Group | Use | Parquet download |
+| --- | --- | ---: |
+| `listing` | Count distinct configured repositories per candidate server | 6.8 MB |
+| `engineer` | Find tools and configuration examples | 82.9 MB |
+| `researcher` | Add pull requests and reviews | 1.70 GB |
+| `all` | Get every released table | 5.31 GB |
 
-```text
-tool             web_search_exa (source=glama, reported by the directory)
-required inputs  query
-provider         https://github.com/exa-labs/exa-mcp-server
-consumer         https://github.com/mikekelly/gap
-setup file       .mcp.json  command=npx  args=["-y", "exa-mcp-server"]
+Sizes come from the [release manifest](release/release-files.json). Groups
+include the preceding groups. Downloads verify SHA-256 hashes and reuse
+existing files. Run `python scripts/download_data.py --list` for table names.
+The examples run offline after downloading.
+
+## Create a local database
+
+After downloading a group, save this as `create_database.py` in the repository
+root and run `python create_database.py`. DuckDB is already installed.
+
+```python
+from pathlib import Path
+import duckdb
+
+Path("outputs").mkdir(exist_ok=True)
+with duckdb.connect("outputs/mcp-eco.duckdb") as con:
+    for path in sorted(Path("data/parquet").glob("*.parquet")):
+        con.execute(
+            f'CREATE OR REPLACE TABLE "{path.stem}" AS SELECT * FROM read_parquet(?)',
+            [str(path)],
+        )
 ```
 
-The tool requires a `query` input. `source=glama` means this information came
-from the Glama directory.
+Open `outputs/mcp-eco.duckdb` in a DuckDB-compatible SQL client. The script
+copies every downloaded table and replaces tables with the same names on rerun.
+Foreign keys are not enforced. See the [join guide](docs/data-dictionary.md)
+before combining tables.
 
-Open the [server repository](https://github.com/exa-labs/exa-mcp-server) for its
-current setup instructions. The [project file checked for the paper](https://github.com/mikekelly/gap/blob/0e83784f1f47ab0098c2ed8595ada46852a1f89b/.mcp.json)
-is a concrete example of a server declaration. It does not prove that the
-project called this tool. These scripts inspect stored records and do not
-start or install an MCP server.
+## More examples
 
-To search for something else:
-
-```sh
-python scripts/engineer_example.py --data-dir data --term "pull request" --output outputs/pull-request-tools.json
-```
-
-The search covers tools whose servers have at least one linked project in the
-dataset. It does not search every MCP tool. The fixed Exa check runs after each
-search, even when you choose a different term. See the [example guide](docs/examples.md)
-for the query and checks.
-
-## Explore further
-
-### Find pull requests about a tool input
-
-The researcher example searches Exa's stored pull requests for `livecrawl`
-and shows their merge status and recorded reviews.
-
-**This needs about 1.70 GB of data in total.** Files downloaded for the engineer
-example are reused.
+**Trace a tool input to a maintenance discussion:** search stored Exa pull
+requests for `livecrawl` and inspect their reviews.
 
 ```sh
 python scripts/download_data.py --group researcher --data-dir data
 python scripts/researcher_example.py --data-dir data --term livecrawl --output outputs/researcher.json
 ```
 
-The script checks the paper's selected pull request against a saved GitHub
-inspection. This is an offline check, not a fresh request. The records come
-from different times and do not reconstruct an interface's version history.
-
-See [the researcher example](docs/examples.md#c-researcher-from-a-tool-to-a-development-discussion)
-for search options and how duplicate pull request records are handled.
-
-### Run the paper's code listing
-
-This smaller example needs about **6.8 MB**. It counts distinct projects that
-name each candidate server in a harvested setup file.
+**Reproduce the paper's SQL listing:** count distinct configured repositories
+per candidate server.
 
 ```sh
 python scripts/download_data.py --group listing --data-dir data
 python scripts/paper_listing.py --data-dir data --output outputs/listing.csv
 ```
 
-`configured_repositories` counts each project once per server. It does not
-count installations or active users. The script checks every result against
-the saved output of the paper's listing.
+See the [example guide](docs/examples.md) for query details and custom SQL.
 
-## Choose what to download
+## Before analysing
 
-Existing files in `data/` are reused after checksum verification. The example
-scripts run offline after downloading.
+- Server and consumer records are **candidates**. Membership and declaration
+  matches have not been fully validated.
+- Configurations show **declared connections**, not installations or active use.
+- `probe` capabilities were observed during collection. `glama` capabilities
+  are directory-reported. Missing rows do not establish that a server has no tools.
+- Records come from different times. Repository activity need not concern MCP,
+  and linked records do not reconstruct an interface's version history.
+- Public identities and text remain in the data. Do not use them to profile individuals.
 
-```sh
-python scripts/download_data.py --list
-```
+Read the [limitations](docs/limitations.md) and [collection methods](docs/collection.md)
+when designing a study.
 
-<details>
-<summary>Download sizes and included tables</summary>
+## Reproduce the release
 
-Sizes are total Parquet bytes from [the release manifest](release/release-files.json).
-Each group includes the tables of the group above it. Downloading also fetches
-small schema and metadata files.
-
-| Group | Files | Download | Tables added |
-| --- | ---: | ---: | --- |
-| `listing` | 2 | 6,783,663 bytes (6.8 MB) | `mcp_servers`, `repo_server_usage` |
-| `engineer` | 5 | 82,924,793 bytes (82.9 MB) | `consumer_repos`, `mcp_tools`, `mcp_server_transports` |
-| `researcher` | 8 | 1,697,298,748 bytes (1.70 GB) | `server_pull_requests`, `client_pull_requests`, `pr_reviews` |
-| `all` | 19 | 5,309,329,895 bytes (5.31 GB) | every table of the release |
-
-Add `--offline` to a download command to check local files without contacting
-Hugging Face. If a file is missing or its checksum differs, the command stops
-and explains the problem.
-
-</details>
-
-## Save the tables as a database
-
-To use your own SQL client, copy the downloaded tables into one DuckDB file.
-Download a group first. Every table in `data/parquet/` is copied.
-
-```python
-import duckdb, pathlib
-
-pathlib.Path("outputs").mkdir(exist_ok=True)
-con = duckdb.connect("outputs/mcp-eco.duckdb")
-for f in sorted(pathlib.Path("data/parquet").glob("*.parquet")):
-    con.execute(f"CREATE OR REPLACE TABLE {f.stem} AS SELECT * FROM read_parquet('{f}')")
-```
-
-Run it from the repository root. Tables keep their release names. Foreign keys
-are not enforced.
-
-## Understand the data
-
-- **A server record is a candidate project.** Some candidates may not be MCP
-  servers. Membership has not been fully validated.
-- **A setup file shows a declared connection.** It does not show that the
-  server or a particular tool was used.
-- **Tool sources differ.** `glama` means directory-reported information.
-  `probe` means an interface observed during collection. Missing records do
-  not prove that a server has no tools.
-- **This is a historical dataset.** Records were collected at different times.
-  Check current server documentation before using an interface.
-- **The data retain public identities and text.** They are not anonymous and
-  should not be used to profile individuals.
-
-Read the [limitations](docs/limitations.md) before drawing conclusions across
-the dataset.
-
-## Reproduce the paper
-
-The scripts pin this Hugging Face revision in
-[`release/source.json`](release/source.json):
-
-```text
-c8edfd4bdf51b15ea95d6b0ede5dec97945f398a
-```
-
-The code cited by the paper is tagged [v0.1.0](https://github.com/khalid-tounoussi-1/mcp-eco-artifact/tree/v0.1.0).
-The code tag and the data revision identify different things.
-
-To check every data file and regenerate the paper's inventory, download the
-full release. This requires about **5.31 GB**:
+Downloads pin the data revision in [release/source.json](release/source.json).
+The paper's code release is [v0.1.0](https://github.com/khalid-tounoussi-1/mcp-eco-artifact/tree/v0.1.0).
+Record both when reporting results.
 
 ```sh
 python scripts/download_data.py --group all --data-dir data
@@ -192,57 +134,16 @@ python scripts/verify_release.py --data-dir data --check
 python scripts/check_claims.py --data-dir data
 ```
 
-See [reproduction instructions](docs/reproduction.md) for expected results
-and the tested environment. These scripts query the published data. They do
-not recreate the original crawl.
+These commands verify the published files and regenerate inventory claims.
+See [reproduction instructions](docs/reproduction.md) for checks, tests, and
+the tested environment. The original crawler is not included.
 
-## Documentation and tests
+## Citation and license
 
-| I want to… | Read |
-| --- | --- |
-| Understand the tables and join keys | [Data dictionary](docs/data-dictionary.md) |
-| Change a search or write my own SQL | [Example guide](docs/examples.md) |
-| Understand how records were collected | [Collection methods](docs/collection.md) |
-| Check the paper's results | [Reproduction instructions](docs/reproduction.md) |
+If you use MCP-Eco, cite *MCP-Eco: Mining Both Sides of the Model Context
+Protocol (MCP) Ecosystem* and include your data revision.
+[CITATION.cff](CITATION.cff) provides the authors and preferred citation.
 
-To run the unit tests:
-
-```sh
-python -m pip install -r requirements-test.lock
-python -m pytest
-```
-
-These tests use small synthetic records and need no data download. Checking
-the actual release is a separate step described above.
-
-## Cite MCP-Eco
-
-Khalid Tounoussi, Mohammed Sayagh, Ali Ouni, and Yutaro Kashiwa.
-*MCP-Eco: Mining Both Sides of the Model Context Protocol (MCP) Ecosystem*.
-Unpublished manuscript prepared for the ICSE 2027 Tool Demonstration and Data
-Showcase Track, 2026.
-
-Please include the data revision you used. [CITATION.cff](CITATION.cff) contains
-the software metadata and preferred paper citation.
-
-<details>
-<summary>BibTeX</summary>
-
-```bibtex
-@unpublished{tounoussi2026mcpeco,
-  author = {Tounoussi, Khalid and Sayagh, Mohammed and Ouni, Ali and Kashiwa, Yutaro},
-  title  = {{MCP-Eco}: Mining Both Sides of the {Model Context Protocol} ({MCP}) Ecosystem},
-  year   = {2026},
-  note   = {Unpublished manuscript prepared for the ICSE 2027 Tool Demonstration and Data Showcase Track. Associated dataset revision c8edfd4bdf51b15ea95d6b0ede5dec97945f398a},
-  url    = {https://huggingface.co/datasets/mcp-research-alliance/mcp-ecosystem}
-}
-```
-
-</details>
-
-## Licenses
-
-Code and documentation are [MIT licensed](LICENSE). The dataset is
-[CC BY 4.0](DATA-LICENSE.md), with third-party content retaining its own terms.
-The copied release files, schema image, and expected data records fall under
-the dataset license rather than MIT.
+Code and documentation: [MIT](LICENSE).
+Dataset, copied release files, schema image, and expected data records:
+[CC BY 4.0](DATA-LICENSE.md). Third-party content retains its original terms.
