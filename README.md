@@ -137,6 +137,23 @@ and explains the problem.
 
 </details>
 
+## Save the tables as a database
+
+To use your own SQL client, copy the downloaded tables into one DuckDB file.
+Download a group first. Every table in `data/parquet/` is copied.
+
+```python
+import duckdb, pathlib
+
+pathlib.Path("outputs").mkdir(exist_ok=True)
+con = duckdb.connect("outputs/mcp-eco.duckdb")
+for f in sorted(pathlib.Path("data/parquet").glob("*.parquet")):
+    con.execute(f"CREATE OR REPLACE TABLE {f.stem} AS SELECT * FROM read_parquet('{f}')")
+```
+
+Run it from the repository root. Tables keep their release names. Foreign keys
+are not enforced.
+
 ## Understand the data
 
 - **A server record is a candidate project.** Some candidates may not be MCP
