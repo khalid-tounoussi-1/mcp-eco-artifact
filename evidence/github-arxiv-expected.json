@@ -1,0 +1,239 @@
+{
+  "release_revision": "c8edfd4bdf51b15ea95d6b0ede5dec97945f398a",
+  "selection": "Purposefully selected illustrative cases, not a population sample",
+  "github": {
+    "server_id": "43fba714-8430-59fd-81eb-885730bf9990",
+    "package_identifier": "@modelcontextprotocol/server-github",
+    "consumer_url": "https://github.com/redis/RedisInsight",
+    "tools": [
+      {
+        "tool_id": "fb05d097-3e80-48e5-82da-ee91f1168156",
+        "tool_name": "create_pull_request",
+        "schema": {
+          "type": "object",
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "required": [
+            "owner",
+            "repo",
+            "title",
+            "head",
+            "base"
+          ],
+          "properties": {
+            "base": {
+              "type": "string",
+              "description": "The name of the branch you want the changes pulled into"
+            },
+            "body": {
+              "type": "string",
+              "description": "Pull request body/description"
+            },
+            "head": {
+              "type": "string",
+              "description": "The name of the branch where your changes are implemented"
+            },
+            "repo": {
+              "type": "string",
+              "description": "Repository name"
+            },
+            "draft": {
+              "type": "boolean",
+              "description": "Whether to create the pull request as a draft"
+            },
+            "owner": {
+              "type": "string",
+              "description": "Repository owner (username or organization)"
+            },
+            "title": {
+              "type": "string",
+              "description": "Pull request title"
+            },
+            "maintainer_can_modify": {
+              "type": "boolean",
+              "description": "Whether maintainers can modify the pull request"
+            }
+          },
+          "additionalProperties": false
+        },
+        "example_input": {
+          "owner": "example",
+          "repo": "project",
+          "title": "Example fix",
+          "head": "fix",
+          "base": "main"
+        }
+      },
+      {
+        "tool_id": "b078902f-741f-44b1-8dff-6fb23975035c",
+        "tool_name": "get_file_contents",
+        "schema": {
+          "type": "object",
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "required": [
+            "owner",
+            "repo",
+            "path"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Path to the file or directory"
+            },
+            "repo": {
+              "type": "string",
+              "description": "Repository name"
+            },
+            "owner": {
+              "type": "string",
+              "description": "Repository owner (username or organization)"
+            },
+            "branch": {
+              "type": "string",
+              "description": "Branch to get contents from"
+            }
+          },
+          "additionalProperties": false
+        },
+        "example_input": {
+          "owner": "example",
+          "repo": "project",
+          "path": "README.md"
+        }
+      },
+      {
+        "tool_id": "e6dfddcd-e800-4a1a-a6b2-082f61bc50a7",
+        "tool_name": "get_issue",
+        "schema": {
+          "type": "object",
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "required": [
+            "owner",
+            "repo",
+            "issue_number"
+          ],
+          "properties": {
+            "repo": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "issue_number": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false
+        },
+        "example_input": {
+          "owner": "example",
+          "repo": "project",
+          "issue_number": 1
+        }
+      }
+    ],
+    "setup": {
+      "config_file_path": "mcp.json",
+      "raw_command": "npx",
+      "raw_args": [
+        "-y",
+        "@modelcontextprotocol/server-github@2025.4.8"
+      ],
+      "match_method": "package_ver"
+    }
+  },
+  "arxiv": {
+    "server_id": "9561c053-a3c7-549b-af03-370d1c0a315d",
+    "server_url": "https://github.com/blazickjp/arxiv-mcp-server",
+    "issue_id": 3729290455,
+    "body_sha256": "5313428bb44ca365e762b2860fbca4be67f666b86c5c271f9919a7ce4f516a87",
+    "tools": [
+      {
+        "tool_id": "d271439e-932d-42df-9a15-32351b3f8462",
+        "tool_name": "download_paper",
+        "schema": {
+          "type": "object",
+          "required": [
+            "paper_id"
+          ],
+          "properties": {
+            "paper_id": {
+              "type": "string",
+              "description": "The arXiv ID of the paper to download (e.g. '2103.12345')"
+            }
+          },
+          "additionalProperties": false
+        },
+        "example_input": {
+          "paper_id": "2501.12345"
+        }
+      },
+      {
+        "tool_id": "b5527106-1801-4182-a71a-39c149f949d2",
+        "tool_name": "read_paper",
+        "schema": {
+          "type": "object",
+          "required": [
+            "paper_id"
+          ],
+          "properties": {
+            "paper_id": {
+              "type": "string",
+              "description": "The arXiv ID of the paper to read"
+            }
+          },
+          "additionalProperties": false
+        },
+        "example_input": {
+          "paper_id": "2501.12345"
+        }
+      },
+      {
+        "tool_id": "f8bfdbb6-fa6d-4da6-a0d3-5a218ade8582",
+        "tool_name": "search_papers",
+        "schema": {
+          "type": "object",
+          "required": [
+            "query"
+          ],
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "Search query using quoted phrases for exact matches (e.g., '\"machine learning\" OR \"deep learning\"') or specific technical terms. Avoid overly broad or generic terms."
+            },
+            "date_to": {
+              "type": "string",
+              "description": "End date for papers (YYYY-MM-DD format). Use with date_from to find historical work, e.g., '2020-12-31' for older research."
+            },
+            "sort_by": {
+              "enum": [
+                "relevance",
+                "date"
+              ],
+              "type": "string",
+              "description": "Sort results by 'relevance' (most relevant first, default) or 'date' (newest first). Use 'relevance' for focused searches, 'date' for recent developments."
+            },
+            "date_from": {
+              "type": "string",
+              "description": "Start date for papers (YYYY-MM-DD format). Use to find recent work, e.g., '2023-01-01' for last 2 years."
+            },
+            "categories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Strongly recommended: arXiv categories to focus search (e.g., ['cs.AI', 'cs.MA'] for agent research, ['cs.LG'] for ML, ['cs.CL'] for NLP, ['cs.CV'] for vision). Greatly improves relevance."
+            },
+            "max_results": {
+              "type": "integer",
+              "description": "Maximum number of results to return (default: 10, max: 50). Use 15-20 for comprehensive searches."
+            }
+          },
+          "additionalProperties": false
+        },
+        "example_input": {
+          "query": "model context protocol"
+        }
+      }
+    ]
+  }
+}

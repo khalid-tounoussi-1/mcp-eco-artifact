@@ -4,13 +4,13 @@ from __future__ import annotations
 
 import re
 
-from common import ROOT, load_release
+from common import GROUP_NAMES, ROOT, load_release
 
 
 def test_readme_group_sizes_match_the_manifest():
     release = load_release()
     readme = (ROOT / "README.md").read_text()
-    for group in ("listing", "engineer", "researcher", "all"):
+    for group in GROUP_NAMES:
         tables = release.group(group)
         row = re.search(rf"^\| `{group}` \| (\d+) \| ([\d,]+) bytes", readme, re.MULTILINE)
         assert row, f"no README row for {group}"

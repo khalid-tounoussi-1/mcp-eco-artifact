@@ -1,218 +1,106 @@
 # Examples
 
-All commands run from the repository root, inside the environment created in
-the README. Each example reads only verified local files and never contacts the
-network. Outputs go to `outputs/`, which Git ignores.
+These purposefully selected cases illustrate joins in the frozen release.
+They are not population samples. Download commands contact Hugging Face.
+The example scripts and SQL then read verified local files offline.
+Nothing runs an MCP server or executes a command found in a record.
 
-## A. The paper's listing
+## Software engineer: GitHub tools and a project setup
 
-```sh
-python scripts/download_data.py --group listing --data-dir data
-python scripts/paper_listing.py --data-dir data --output outputs/listing.csv
-```
-
-**Reads** `mcp_servers` and `repo_server_usage`.
-**Query** [`queries/paper_listing.sql`](../queries/paper_listing.sql).
-**Writes** one CSV row per candidate server with at least one matched
-declaration.
-
-The query follows Listing 1 of the paper:
-
-1. Drop declarations whose `server_id` is null, since they matched no server.
-2. Reduce declarations to distinct `(repo_id, server_id)` pairs, since one
-   repository can declare a server in several files.
-3. Join server names.
-4. Count distinct repositories per server.
-
-The only change from the paper is a tie-break on `server_id` after the
-descending count. It fixes the order of tied rows and changes no key or count.
-
-`configured_repositories` is the number of linked projects found in harvested
-setup files. It is not an installation count, an active-user count, or a
-measure of runtime use. Servers often declared under names that matched no
-candidate are undercounted.
-
-The script compares the full result, key by key, with
-[`evidence/listing-expected.csv`](../evidence/listing-expected.csv). That file
-holds all rows produced by the paper's listing code on the frozen release (see
-[reproduction.md](reproduction.md)). Row order is not compared, because the
-paper's listing leaves the order of ties open.
-
-**Extension.** `--check-references` adds the referential checks of the dataset
-card's pandas example. It confirms that every resolved pair references an
-existing `consumer_repos` and `mcp_servers` record. It needs the `engineer`
-group and is not part of the paper's listing.
-
-## B. Software engineer: from a needed tool to a setup example
+An engineer wants an assistant to inspect an issue, read source files, and
+prepare a pull request. MCP-Eco provides the recorded input schemas of the
+reference GitHub package and an existing project's configuration to inspect.
 
 ```sh
-python scripts/download_data.py --group engineer --data-dir data
-python scripts/engineer_example.py --data-dir data --output outputs/engineer.json
+python scripts/download_data.py --group github --data-dir data
+python scripts/github_workflow.py --data-dir data --output outputs/github-workflow.json
 ```
 
-**Reads** the listing tables plus `consumer_repos`, `mcp_tools`, and
-`mcp_server_transports`. **Query** [`queries/linked_tools.sql`](../queries/linked_tools.sql).
+The script reads `mcp_server_transports`, `mcp_tools`, `repo_server_usage`, and
+`consumer_repos`. The selection is explicit in
+[`queries/github_workflow.sql`](../queries/github_workflow.sql).
 
-An engineer wants web search in a coding assistant.
+- Resolve `@modelcontextprotocol/server-github` to its candidate identifier.
+- Keep probed `get_issue`, `get_file_contents`, and `create_pull_request` tools.
+- Follow that identifier to RedisInsight's root `mcp.json` declaration.
+- Keep package-identifier matches and check the actual launcher and arguments.
 
-**Part 1, search.** The script searches tool names and descriptions for
-`--term` (default `web search`). It searches only tools of servers with at least
-one linked consuming repository. Underscores in tool names count as spaces, so
-`web search` finds `web_search_exa`. Each result shows the tool, its `source`,
-its required inputs, the provider repository, the number of linked consuming
-repositories, and one example setup file.
+The declaration uses `npx` with
+`["-y", "@modelcontextprotocol/server-github@2025.4.8"]`, labeled
+`package_ver`. An independent public setup example is the
+[pinned RedisInsight file](https://github.com/redis/RedisInsight/blob/f0c887c73011afdd5e3fb03f9bb341d915eec378/mcp.json).
+That public revision does not identify the commit used during collection.
 
-- One row per tool observation. A tool reported by both sources appears twice.
-- Linked repositories are counted per server before the join, so tool rows are
-  not multiplied by declarations.
-- `required=None` means no stored schema. It does not mean the tool takes no
-  input.
-- The example setup file is the first linked declaration by consumer URL, file
-  path, and `usage_id`. It is not ranked by quality.
+The JSON output includes complete input schemas and the configuration entry.
+The checks compare schemas with recorded evidence, accept illustrative valid
+inputs, and reject missing inputs and a wrong input type. The package mapping
+and setup fields must match the selected records.
 
-Try another term:
+This is the older reference package, separate from `github/github-mcp-server`.
+The stored reference URL contains `/tree/head/` and is not a working public
+link. Package identity is used for this case. Probe records do not record a
+package version, so the example does not establish compatibility with the
+version RedisInsight declares or show that RedisInsight called these tools.
+
+### Compact paper query
 
 ```sh
-python scripts/engineer_example.py --data-dir data --term "pull request" --output outputs/engineer-pr.json
+python scripts/run_query.py queries/github_workflow.sql --group github --data-dir data
 ```
 
-A term with no match prints no results. The checks of Part 2 still run.
+Each result pairs a selected tool with the same setup declaration. Repeated
+configuration fields are intentional. This query does not count distinct
+servers or projects. The full Python script adds identity and schema checks.
 
-**Part 2, the paper's case.** The script then checks the case in the paper.
-This case was selected deliberately from tools matching web-search names. It is
-not the top search result, and the script does not pick it from the search.
+## Researcher: arXiv tools and a historical issue
 
-| Field | Value in the frozen release |
-| --- | --- |
-| Tool | `web_search_exa`, `source=glama` (reported by the Glama directory) |
-| Required input | `query`, a string |
-| Input fields | `contextMaxCharacters`, `livecrawl`, `numResults`, `query`, `type` |
-| Provider repository | https://github.com/exa-labs/exa-mcp-server |
-| Consumer repository | https://github.com/mikekelly/gap |
-| Setup file | `.mcp.json` |
-| Declaration | command `npx`, arguments `["-y", "exa-mcp-server"]` |
-| Matching method | `v1` |
-
-Checks, each of which stops the script if it fails:
-
-- Exactly one linked observation matches the tool, source, server, and consumer.
-  Its `tool_id` and `server_id` equal the recorded ones.
-- The stored schema text has the recorded SHA-256 hash and is a valid JSON
-  Schema (draft 7). It accepts `{"query": "MCP documentation"}`. It rejects
-  `{"numResults": 5}`, which lacks `query`, and `{"query": 5}`, which has the
-  wrong type.
-- Exactly one declaration links the gap project to the server in `.mcp.json`.
-  Its command, arguments, and matching method equal the recorded ones exactly.
-- The package `exa-mcp-server` maps to one server in `mcp_server_transports`,
-  and it is the Exa server.
-
-The JSON output keeps the identifiers, the declaration, and the tool
-observations per source. A source with no rows is absent, not zero.
-
-The declaration names a server to connect to. It does not show that the
-project called this tool. No server is run, and no command from a record is
-executed.
-
-## C. Researcher: from a tool to a development discussion
+A researcher studies coordination between paper-retrieval tools. Starting
+from the probed interfaces of `blazickjp/arxiv-mcp-server`, the example connects
+`search_papers`, `download_paper`, and `read_paper` to a development report.
 
 ```sh
-python scripts/download_data.py --group researcher --data-dir data
-python scripts/researcher_example.py --data-dir data --output outputs/researcher.json
+python scripts/download_data.py --group arxiv --data-dir data
+python scripts/arxiv_workflow.py --data-dir data --output outputs/arxiv-workflow.json
 ```
 
-**Reads** the engineer tables plus `server_pull_requests`,
-`client_pull_requests`, and `pr_reviews`. **Query**
-[`queries/server_changes.sql`](../queries/server_changes.sql).
+The script reads `mcp_servers`, `mcp_tools`, and `ecosystem_issues`.
+[`queries/arxiv_workflow.sql`](../queries/arxiv_workflow.sql) defines separate
+tool and issue views joined through `server_id`.
 
-A researcher asks how maintainers change tool inputs.
+[Issue 54](https://github.com/blazickjp/arxiv-mcp-server/issues/54) reports that
+asynchronous conversion interrupted a sequential download-to-read workflow.
+This provides a case for investigating tool coordination and interface design.
+The JSON output retains tool descriptions, schemas, observation dates, the
+stored issue body, and issue dates. Checks require the selected tool and issue
+identities, the recorded schemas and issue-text hash, and the expected timing.
 
-**Part 1, search.** Starting from a server (`--server-url`, default the Exa
-server), the script searches its pull request titles and bodies for `--term`
-(default `livecrawl`). Each result shows the pull request, its merge state,
-and its review count.
+The issue closed before the later probe observations. The observed download
+description says content is returned directly, while the issue reports older
+asynchronous behavior. The shared repository identifier does not establish a
+common implementation version, an interface history, or a defect in the
+probed implementation. These scripts do not reproduce the reported failure.
 
-- One line per pull request, identified by `pr_key` (see
-  [data-dictionary.md](data-dictionary.md#one-pull-request-several-stored-rows)).
-  A pull request stored more than once, under several ids, URL spellings, or
-  tables, is gathered into one line that lists its `pr_id` values. The JSON
-  output also lists every URL spelling.
-- Reviews are gathered over all of those ids and counted by distinct
-  `review_id`, before any join. If another pull request uses one of the ids,
-  the output says the reviews are not attributed.
-- When stored rows disagree on state or merge time, all values are shown.
-- "no review rows recorded" means the release holds no review row for any of
-  the ids. It does not mean the pull request had no review.
-
-In the default search, pull requests 123 and 149 are each stored twice, once
-in each pull request table under different ids. Their approving reviews sit
-under the `client_pull_requests` id, so a search keyed by the server row's
-`pr_id` alone would miss them.
-
-Try another term or server:
+To inspect the repository-level join directly:
 
 ```sh
-python scripts/researcher_example.py --data-dir data --term web_search_exa --output outputs/researcher-tool.json
+python scripts/run_query.py queries/arxiv_workflow.sql --group arxiv --data-dir data
 ```
 
-**Part 2, the paper's case.** The script checks Exa pull request 237,
-https://github.com/exa-labs/exa-mcp-server/pull/237. It discusses removing
-`livecrawl` from the `web_search_exa` tool schema.
+The same issue appears beside each selected tool. Treat it as one historical
+report associated with the server, not as independent reports for each tool.
 
-- Exactly one server pull request has this URL. Its `pr_id` occurs once in
-  `server_pull_requests`. Neither the URL nor the `pr_id` occurs in
-  `client_pull_requests`.
-- The body mentions `web_search_exa` and `livecrawl`. The pull request has a
-  merge timestamp.
-- Its review rows are one `COMMENTED` and one `APPROVED` review, with the
-  recorded IDs.
-- The frozen `pr_id` (4129324178) is the GitHub issue ID. The REST pull
-  request ID is 3440544009. Numeric equality alone would not be enough to
-  attribute reviews in general.
-- The stored tool observation is dated 2026-06-13, after the merge on
-  2026-03-24, yet its schema still lists `livecrawl`.
+## Evidence, other queries, and release verification
 
-**Part 3, receipt replay.** [`evidence/upstream-check.json`](../evidence/upstream-check.json)
-records a public GitHub inspection made on 2026-10-13. The script checks the
-frozen records against it offline: the consumer's launcher and package
-argument, the pull request identity, and the review IDs and states. This replay
-is not a fresh GitHub check.
+[`evidence/github-arxiv-expected.json`](../evidence/github-arxiv-expected.json)
+records the selected identities, schemas, configuration fields, and issue hash.
+Input files are verified against the frozen release manifest before querying.
+These checks verify the stored cases, not candidate membership across the
+release or the correctness of all configuration matches.
 
-The tool observation and the pull request were collected at different times.
-The example identifies a case to investigate. It does not establish an
-interface history, present compatibility, or a current defect. An approval
-does not establish tested correctness.
+The [original code-release examples](legacy-examples.md) remain available,
+including the configuration count, Exa tool search, and pull-request review
+queries. They retain their existing commands and tests.
 
-### Optional live refresh
-
-```sh
-python scripts/refresh_upstream.py
-```
-
-This repeats the GitHub inspection with 4 unauthenticated requests. It writes a
-new file, `outputs/upstream-check-<UTC time>.json`, and reports any difference
-from the frozen receipt. It never changes `evidence/upstream-check.json`, and
-nothing else depends on it. It stores hashes and launcher facts, not the
-inspected file.
-
-## D. Release verification
-
-```sh
-python scripts/download_data.py --group all --data-dir data
-python scripts/verify_release.py --data-dir data --check
-python scripts/check_claims.py --data-dir data
-```
-
-See the README and [reproduction.md](reproduction.md).
-
-## E. Your own query
-
-`scripts/run_query.py` verifies the files of one download group, exposes each
-table as a DuckDB view with the table's name, and prints the result of the last
-statement in a SQL file. It writes nothing.
-
-```sh
-python scripts/run_query.py queries/pr_storage_checks.sql --group researcher --data-dir data
-```
-
-This query counts pull requests stored more than once, as reported in
-[data-dictionary.md](data-dictionary.md#one-pull-request-several-stored-rows).
+See [reproduction.md](reproduction.md) for release verification and the record
+of checks. [`scripts/run_query.py`](../scripts/run_query.py) also supports custom
+SQL over any named download group.

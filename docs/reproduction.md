@@ -4,7 +4,48 @@ This page maps each item of the paper that this repository can check to its
 command, and records a tested run. Run every command from the repository root,
 inside the environment created in the README.
 
-## Paper items
+## Current GitHub and arXiv examples
+
+The paper now uses the reference GitHub/RedisInsight configuration case and
+the arXiv historical issue case. These reuse the frozen data revision
+`c8edfd4bdf51b15ea95d6b0ede5dec97945f398a`.
+The older count and Exa examples below document the original code release.
+
+| Example | Download | Reproduce | SQL |
+| --- | --- | --- | --- |
+| Software engineer | `python scripts/download_data.py --group github --data-dir data` | `python scripts/github_workflow.py --data-dir data` | `queries/github_workflow.sql` |
+| Researcher | `python scripts/download_data.py --group arxiv --data-dir data` | `python scripts/arxiv_workflow.py --data-dir data` | `queries/arxiv_workflow.sql` |
+
+Both scripts verify all input-file hashes before querying. Selected identities,
+schemas, and configuration fields are checked against
+`evidence/github-arxiv-expected.json`. The researcher example also checks the
+stored issue-text hash and that the issue closed before the probe observations.
+No MCP server is launched and no recorded tool is invoked.
+
+The current cases were previously reviewed by the source project's read-only
+data-auditor and separate GitHub and arXiv challenger agents. Their narrow
+linkage claims survived, with the version and timing limits described in
+[examples.md](examples.md). The executable packaging is checked separately.
+
+### Example update checks, 2026-10-23
+
+- Both current example scripts passed against the frozen, hash-verified files.
+- Both scripts passed again with Hugging Face offline mode enabled and HTTP
+  proxies pointing to a closed local port. Their JSON outputs matched the
+  corresponding first runs.
+- The Hugging Face card's shared setup and both Python examples executed
+  against the pinned public files and selected the intended records.
+- The synthetic unit-test suite passed: 52 tests. The tests include transport
+  duplicates, source and declaration filters, schema checks, issue-text changes,
+  and an issue closed after the probes.
+- The read-only data-auditor reviewed the packaged queries and scripts and
+  reported no material defects. It confirmed equivalence to the earlier
+  audited cases, with their version and historical-timing caveats.
+
+These checks validate the selected stored examples. They do not execute MCP
+servers, validate the full candidate population, or reproduce a user workflow.
+
+## Original code-release paper items
 
 | Paper item | Command | Query or logic | Files read | Output | Success condition |
 | --- | --- | --- | --- | --- | --- |

@@ -27,5 +27,7 @@ jobs:
       - run: python scripts/download_data.py --group researcher --data-dir data
       - run: python scripts/researcher_example.py --data-dir data --output outputs/researcher.json
       - run: python scripts/download_data.py --group all --data-dir data
+      - run: python scripts/github_workflow.py --data-dir data --output outputs/github-workflow.json
+      - run: python scripts/arxiv_workflow.py --data-dir data --output outputs/arxiv-workflow.json
       - run: python scripts/verify_release.py --data-dir data --check
       - run: python scripts/check_claims.py --data-dir data

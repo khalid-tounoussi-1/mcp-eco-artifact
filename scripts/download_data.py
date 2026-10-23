@@ -5,7 +5,7 @@ from release/release-files.json, before it downloads anything. Each file is
 checked against its pinned size and SHA-256 hash. Files already present are
 verified and never overwritten. No credentials are needed.
 
-Groups: listing, engineer, researcher, all. Use --list to see their sizes.
+Groups: github, arxiv, listing, engineer, researcher, all. Use --list for sizes.
 """
 
 from __future__ import annotations

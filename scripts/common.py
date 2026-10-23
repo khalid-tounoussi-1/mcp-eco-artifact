@@ -31,7 +31,9 @@ GROUPS["researcher"] = GROUPS["engineer"] + (
     "client_pull_requests",
     "pr_reviews",
 )
-GROUP_NAMES = ("listing", "engineer", "researcher", "all")
+GROUPS["github"] = ("mcp_server_transports", "mcp_tools", "repo_server_usage", "consumer_repos")
+GROUPS["arxiv"] = ("mcp_servers", "mcp_tools", "ecosystem_issues")
+GROUP_NAMES = ("github", "arxiv", "listing", "engineer", "researcher", "all")
 
 EVIDENCE_FILES = (
     ("collection_metadata.json", "metadata_sha256"),
